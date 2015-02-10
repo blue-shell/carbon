@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygendockseparatordata.cpp
+// carbondockseparatordata.cpp
 // generic data container for widgetstate hover (mouse-over) animations
 // -------------------
 //
@@ -24,10 +24,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendockseparatordata.h"
+#include "carbondockseparatordata.h"
 
 #include <QTextStream>
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

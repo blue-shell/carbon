@@ -25,14 +25,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenitemmodel.h"
+#include "carbonitemmodel.h"
 
 #include <QSet>
 #include <QList>
 
 #include <algorithm>
 
-namespace Oxygen
+namespace Carbon
 {
     //! Job model. Stores job information for display in lists
     template<class T> class ListModel : public ItemModel

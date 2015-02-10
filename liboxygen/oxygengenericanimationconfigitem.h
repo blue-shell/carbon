@@ -1,8 +1,8 @@
-#ifndef oxygengenericanimationconfigitem_h
-#define oxygengenericanimationconfigitem_h
+#ifndef carbongenericanimationconfigitem_h
+#define carbongenericanimationconfigitem_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygengenericanimationconfigitem.h
+// carbongenericanimationconfigitem.h
 // animation configuration item
 // -------------------
 //
@@ -27,8 +27,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen_config_export.h"
-#include "oxygenanimationconfigitem.h"
+#include "carbon_config_export.h"
+#include "carbonanimationconfigitem.h"
 
 #include <QPointer>
 #include <QFrame>
@@ -36,10 +36,10 @@
 
 class Ui_GenericAnimationConfigBox;
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class OXYGEN_CONFIG_EXPORT GenericAnimationConfigBox: public QFrame
+    class CARBON_CONFIG_EXPORT GenericAnimationConfigBox: public QFrame
     {
 
         Q_OBJECT
@@ -62,7 +62,7 @@ namespace Oxygen
     };
 
     //! generic animation config item
-    class OXYGEN_CONFIG_EXPORT GenericAnimationConfigItem: public AnimationConfigItem
+    class CARBON_CONFIG_EXPORT GenericAnimationConfigItem: public AnimationConfigItem
     {
 
         Q_OBJECT

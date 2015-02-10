@@ -1,8 +1,8 @@
-#ifndef oxygenclientgroupitemdata_h
-#define oxygenclientgroupitemdata_h
+#ifndef carbonclientgroupitemdata_h
+#define carbonclientgroupitemdata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenclientgroupitemdata.h
+// carbonclientgroupitemdata.h
 // handles tabs' geometry and animations
 // -------------------
 //
@@ -27,14 +27,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbutton.h"
-#include "oxygenanimation.h"
+#include "carbonbutton.h"
+#include "carbonanimation.h"
 
 #include <QList>
 #include <QPointer>
 #include <QRect>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class Client;
@@ -216,7 +216,7 @@ namespace Oxygen
 
     };
 
-    Q_DECLARE_OPERATORS_FOR_FLAGS(Oxygen::AnimationTypes)
+    Q_DECLARE_OPERATORS_FOR_FLAGS(Carbon::AnimationTypes)
 
 }
 

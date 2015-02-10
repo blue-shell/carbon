@@ -1,8 +1,8 @@
-#ifndef oxygendockseparator_data_h
-#define oxygendockseparator_data_h
+#ifndef carbondockseparator_data_h
+#define carbondockseparator_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendockseparatordata.h
+// carbondockseparatordata.h
 // generic data container for widgetstate hover (mouse-over) animations
 // -------------------
 //
@@ -27,10 +27,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygengenericdata.h"
-#include "oxygenanimation.h"
+#include "carbongenericdata.h"
+#include "carbonanimation.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! dock widget splitters hover effect

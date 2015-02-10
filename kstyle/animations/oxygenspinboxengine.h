@@ -1,8 +1,8 @@
-#ifndef oxygenspinboxengine_h
-#define oxygenspinboxengine_h
+#ifndef carbonspinboxengine_h
+#define carbonspinboxengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenspinboxengine.h
+// carbonspinboxengine.h
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenspinboxdata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonspinboxdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! handle spinbox arrows hover effect

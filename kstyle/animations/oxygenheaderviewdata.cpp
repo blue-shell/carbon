@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenheaderviewdata.cpp
+// carbonheaderviewdata.cpp
 // data container for QHeaderView animations
 // -------------------
 //
@@ -26,12 +26,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenheaderviewdata.h"
+#include "carbonheaderviewdata.h"
 
 #include <QHoverEvent>
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

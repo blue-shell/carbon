@@ -1,5 +1,5 @@
-#ifndef oxygentileset_h
-#define oxygentileset_h
+#ifndef carbontileset_h
+#define carbontileset_h
 
 /*
  * Copyright 2009-2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -21,7 +21,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygen_export.h"
+#include "carbon_export.h"
 
 #include <QPixmap>
 #include <QRect>
@@ -32,9 +32,9 @@
 tilesets are collections of stretchable pixmaps corresponding to a given widget corners, sides, and center.
 corner pixmaps are never stretched. center pixmaps are
 */
-namespace Oxygen
+namespace Carbon
 {
-    class OXYGEN_EXPORT TileSet
+    class CARBON_EXPORT TileSet
     {
         public:
 
@@ -170,6 +170,6 @@ namespace Oxygen
 
 }
 
-Q_DECLARE_OPERATORS_FOR_FLAGS(Oxygen::TileSet::Tiles)
+Q_DECLARE_OPERATORS_FOR_FLAGS(Carbon::TileSet::Tiles)
 
 #endif //TILESET_H

@@ -1,6 +1,6 @@
-File=oxygeninactiveshadowconfigdata.kcfgc
+File=carboninactiveshadowconfigdata.kcfgc
 ClassName=InactiveShadowConfiguration
-NameSpace=Oxygen
+NameSpace=Carbon
 Singleton=true
 Mutators=true
 GlobalEnums=true

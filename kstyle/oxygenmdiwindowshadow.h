@@ -1,8 +1,8 @@
-#ifndef oxygenmdiwindowshadow_h
-#define oxygenmdiwindowshadow_h
+#ifndef carbonmdiwindowshadow_h
+#define carbonmdiwindowshadow_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdiwindowshadow.h
+// carbonmdiwindowshadow.h
 // handle MDI windows' shadows
 // -------------------
 //
@@ -38,10 +38,10 @@
 #include <QPaintEvent>
 #include <KColorScheme>
 
-#include "oxygenstylehelper.h"
-#include "oxygentileset.h"
+#include "carbonstylehelper.h"
+#include "carbontileset.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! frame shadow

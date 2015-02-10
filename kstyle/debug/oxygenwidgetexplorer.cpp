@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenwidgetexplorer.cpp
+// carbonwidgetexplorer.cpp
 // print widget's and parent's information on mouse click
 // -------------------
 //
@@ -24,15 +24,15 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenwidgetexplorer.h"
-#include "oxygen.h"
+#include "carbonwidgetexplorer.h"
+#include "carbon.h"
 
 #include <QTextStream>
 #include <QApplication>
 #include <QMouseEvent>
 #include <QPainter>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________
@@ -79,7 +79,7 @@ namespace Oxygen
             QString type( _eventTypes[event->type()] );
             if( !type.isEmpty() )
             {
-                QTextStream( stdout ) << "Oxygen::WidgetExplorer::eventFilter - widget: " << object << " (" << object->metaObject()->className() << ")";
+                QTextStream( stdout ) << "Carbon::WidgetExplorer::eventFilter - widget: " << object << " (" << object->metaObject()->className() << ")";
                 QTextStream( stdout ) << " type: " << type  << endl;
             }
         }
@@ -113,7 +113,7 @@ namespace Oxygen
                 if( !widget ) return false;
 
                 QTextStream( stdout )
-                    << "Oxygen::WidgetExplorer::eventFilter -"
+                    << "Carbon::WidgetExplorer::eventFilter -"
                     << " event: " << event << " type: " << eventType( event->type() )
                     << " widget: " << widgetInformation( widget )
                     << endl;

@@ -1,9 +1,9 @@
-#ifndef oxygendemowidget_h
-#define oxygendemowidget_h
+#ifndef carbondemowidget_h
+#define carbondemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendemowidget.h
-// base class for oxygen demo widgets
+// carbondemowidget.h
+// base class for carbon demo widgets
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -29,9 +29,9 @@
 
 #include <QWidget>
 
-#include "oxygensimulator.h"
+#include "carbonsimulator.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     class DemoWidget: public QWidget

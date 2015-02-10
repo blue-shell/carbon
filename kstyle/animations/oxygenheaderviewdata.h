@@ -1,8 +1,8 @@
-#ifndef oxygenheaderview_data_h
-#define oxygenheaderview_data_h
+#ifndef carbonheaderview_data_h
+#define carbonheaderview_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenheaderviewdata.h
+// carbonheaderviewdata.h
 // data container for QHeaderView animations
 // -------------------
 //
@@ -27,10 +27,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
+#include "carbonanimationdata.h"
 #include <QHeaderView>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! headerviews

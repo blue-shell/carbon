@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenblurhelper.cpp
+// carbonblurhelper.cpp
 // handle regions passed to kwin for blurring
 // -------------------
 //
@@ -27,16 +27,16 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenblurhelper.h"
+#include "carbonblurhelper.h"
 
-#include "oxygenstyleconfigdata.h"
+#include "carbonstyleconfigdata.h"
 
 #include <QEvent>
 #include <QVector>
 #include <QProgressBar>
 #include <QPushButton>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //___________________________________________________________
@@ -46,7 +46,7 @@ namespace Oxygen
         _enabled( false )
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
 
         if( _helper.isX11() )
         {
@@ -219,7 +219,7 @@ namespace Oxygen
     void BlurHelper::update( QWidget* widget ) const
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         if( !_helper.isX11() ) return;
 
         /*
@@ -268,7 +268,7 @@ namespace Oxygen
     //___________________________________________________________
     void BlurHelper::clear( QWidget* widget ) const
     {
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         if( !_helper.isX11() ) return;
 
         xcb_delete_property( _helper.connection(), widget->winId(), _blurAtom );

@@ -1,8 +1,8 @@
-#ifndef oxygenbaseengine_h
-#define oxygenbaseengine_h
+#ifndef carbonbaseengine_h
+#define carbonbaseengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbaseengine.h
+// carbonbaseengine.h
 // base engine
 // -------------------
 //
@@ -27,12 +27,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen.h"
+#include "carbon.h"
 
 #include <QObject>
 #include <QSet>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! base class for all animation engines

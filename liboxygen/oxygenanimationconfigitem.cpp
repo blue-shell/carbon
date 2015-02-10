@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigitem.cpp
+// carbonanimationconfigitem.cpp
 // animation configuration item
 // -------------------
 //
@@ -24,17 +24,17 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationconfigitem.h"
-#include "ui_oxygenanimationconfigitem.h"
+#include "carbonanimationconfigitem.h"
+#include "ui_carbonanimationconfigitem.h"
 
-#include "liboxygen.h"
+#include "libcarbon.h"
 
 #include <QTextStream>
 #include <QIcon>
 #include <KLocalizedString>
 #include <KMessageBox>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________
@@ -100,7 +100,7 @@ namespace Oxygen
     void AnimationConfigItem::about( void )
     {
         if( description().isEmpty() ) return;
-        KMessageBox::information( this, description(), i18n( "oxygen-settings - information" ) );
+        KMessageBox::information( this, description(), i18n( "carbon-settings - information" ) );
         return;
     }
 

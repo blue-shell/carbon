@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdiwindowengine.cpp
+// carbonmdiwindowengine.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmdiwindowengine.h"
+#include "carbonmdiwindowengine.h"
 
 #include <QEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlabeldata.cpp
+// carbonlabeldata.cpp
 // data container for QLabel transition
 // -------------------
 //
@@ -24,13 +24,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenlabeldata.h"
+#include "carbonlabeldata.h"
 
 #include <QEvent>
 #include <QTextStream>
 #include <QPainter>
 
-namespace Oxygen
+namespace Carbon
 {
 
     // use 300 milliseconds for animation lock

@@ -18,19 +18,19 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  *************************************************************************/
 
-#include "oxygenstyleconfigmodule.h"
+#include "carbonstyleconfigmodule.h"
 
 #include <KPluginFactory>
 
 
 K_PLUGIN_FACTORY(
-    OxygenStyleConfigFactory,
-    registerPlugin<Oxygen::ConfigurationModule>(QStringLiteral("kcmodule"));
+    CarbonStyleConfigFactory,
+    registerPlugin<Carbon::ConfigurationModule>(QStringLiteral("kcmodule"));
 )
 
-#include "oxygenstyleconfigmodule.moc"
+#include "carbonstyleconfigmodule.moc"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________________________________

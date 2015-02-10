@@ -1,8 +1,8 @@
-#ifndef oxygensplitterengine_h
-#define oxygensplitterengine_h
+#ifndef carbonsplitterengine_h
+#define carbonsplitterengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygensplitterengine.h
+// carbonsplitterengine.h
 // QSplitter engine
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenwidgetstatedata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonwidgetstatedata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! QSplitter animation engine

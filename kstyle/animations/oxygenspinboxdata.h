@@ -1,8 +1,8 @@
-#ifndef oxygenspinbox_data_h
-#define oxygenspinbox_data_h
+#ifndef carbonspinbox_data_h
+#define carbonspinbox_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenspinboxdata.h
+// carbonspinboxdata.h
 // spinbox data container for up/down arrow hover (mouse-over) animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
+#include "carbonanimationdata.h"
 
 #include <QStyle>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! handles spinbox arrows hover

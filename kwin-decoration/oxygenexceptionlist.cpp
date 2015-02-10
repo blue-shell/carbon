@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptionlist.cpp
+// carbonexceptionlist.cpp
 // window decoration exceptions
 // -------------------
 //
@@ -24,12 +24,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenexceptionlist.h"
-#include "oxygenutil.h"
+#include "carbonexceptionlist.h"
+#include "carbonutil.h"
 
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________

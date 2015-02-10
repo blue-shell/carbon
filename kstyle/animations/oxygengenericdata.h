@@ -1,8 +1,8 @@
-#ifndef oxygengeneric_data_h
-#define oxygengeneric_data_h
+#ifndef carbongeneric_data_h
+#define carbongeneric_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygengenericdata.h
+// carbongenericdata.h
 // generic data container for animations
 // -------------------
 //
@@ -27,12 +27,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
-#include "oxygenanimation.h"
+#include "carbonanimationdata.h"
+#include "carbonanimation.h"
 
 #include <QObject>
 #include <QTextStream>
-namespace Oxygen
+namespace Carbon
 {
 
 

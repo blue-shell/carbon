@@ -1,5 +1,5 @@
-#ifndef oxygenstyleconfig_h
-#define oxygenstyleconfig_h
+#ifndef carbonstyleconfig_h
+#define carbonstyleconfig_h
 /*
 Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
 Copyright (C) 2003 Sandro Giessl <ceebx@users.sourceforge.net>
@@ -27,13 +27,13 @@ DEALINGS IN THE SOFTWARE.
 
 */
 
-#include "ui_oxygenstyleconfig.h"
+#include "ui_carbonstyleconfig.h"
 
-namespace Oxygen
+namespace Carbon
 {
     class AnimationConfigWidget;
 
-    class StyleConfig: public QWidget, Ui::OxygenStyleConfig
+    class StyleConfig: public QWidget, Ui::CarbonStyleConfig
     {
 
         Q_OBJECT

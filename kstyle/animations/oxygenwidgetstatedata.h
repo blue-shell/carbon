@@ -1,8 +1,8 @@
-#ifndef oxygenwidgetstatedata_h
-#define oxygenwidgetstatedata_h
+#ifndef carbonwidgetstatedata_h
+#define carbonwidgetstatedata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenwidgetstatedata.h
+// carbonwidgetstatedata.h
 // generic data container for widgetstate hover (mouse-over) animations
 // -------------------
 //
@@ -27,9 +27,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygengenericdata.h"
+#include "carbongenericdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! handle widget state (hover/focus/enable) changes

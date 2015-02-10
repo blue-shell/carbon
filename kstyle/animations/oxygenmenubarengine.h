@@ -1,8 +1,8 @@
-#ifndef oxygenmenubarengine_h
-#define oxygenmenubarengine_h
+#ifndef carbonmenubarengine_h
+#define carbonmenubarengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenubarengine.h
+// carbonmenubarengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenmenubardata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonmenubardata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! stores menubar hovered action and timeLine

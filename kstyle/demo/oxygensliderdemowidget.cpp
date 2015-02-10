@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygensliderdemowidget.cpp
-// oxygen sliders demo widget
+// carbonsliderdemowidget.cpp
+// carbon sliders demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,12 +24,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygensliderdemowidget.h"
+#include "carbonsliderdemowidget.h"
 
 #include <QMenu>
 #include <QStyleOptionSlider>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_____________________________________________________________

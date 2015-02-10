@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigwidget.cpp
+// carbonanimationconfigwidget.cpp
 // animation configuration widget
 // -------------------
 //
@@ -24,16 +24,16 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationconfigwidget.h"
-#include "oxygenanimationconfigitem.h"
-#include "oxygengenericanimationconfigitem.h"
+#include "carbonanimationconfigwidget.h"
+#include "carbonanimationconfigitem.h"
+#include "carbongenericanimationconfigitem.h"
 
 #include <QButtonGroup>
 #include <QHoverEvent>
 #include <QTextStream>
 #include <KLocalizedString>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

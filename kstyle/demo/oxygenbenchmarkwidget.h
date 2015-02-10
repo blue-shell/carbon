@@ -1,9 +1,9 @@
-#ifndef oxygenbenchmarkwidget_h
-#define oxygenbenchmarkwidget_h
+#ifndef carbonbenchmarkwidget_h
+#define carbonbenchmarkwidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbenchmarkwidget.h
-// oxygen buttons demo widget
+// carbonbenchmarkwidget.h
+// carbon buttons demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -27,9 +27,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendemowidget.h"
-#include "ui_oxygenbenchmarkwidget.h"
-#include "../oxygen.h"
+#include "carbondemowidget.h"
+#include "ui_carbonbenchmarkwidget.h"
+#include "../carbon.h"
 
 #include <QWidget>
 #include <QCheckBox>
@@ -37,7 +37,7 @@
 #include <QVector>
 #include <KPageWidget>
 
-namespace Oxygen
+namespace Carbon
 {
     class BenchmarkWidget: public DemoWidget
     {

@@ -1,5 +1,5 @@
-#ifndef oxygen_style_helper_h
-#define oxygen_style_helper_h
+#ifndef carbon_style_helper_h
+#define carbon_style_helper_h
 
 /*
  * Copyright 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -22,18 +22,18 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygenhelper.h"
-#include "oxygen.h"
+#include "carbonhelper.h"
+#include "carbon.h"
 
 #include <KWindowSystem>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <xcb/xcb.h>
 #endif
 
 //* helper class
-/** contains utility functions used at multiple places in oxygen style */
-namespace Oxygen
+/** contains utility functions used at multiple places in carbon style */
+namespace Carbon
 {
 
     class StyleHelper : public Helper
@@ -43,7 +43,7 @@ namespace Oxygen
         //* constructor
         explicit StyleHelper( KSharedConfigPtr config );
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         //* constructor
         explicit StyleHelper( const QByteArray& );
         #endif
@@ -162,10 +162,10 @@ namespace Oxygen
 
         //* generic hole
         void renderHole( QPainter *painter, const QColor& color, const QRect &rect, StyleOptions options = 0, TileSet::Tiles tiles = TileSet::Ring )
-        { renderHole( painter, color, rect, options, -1, Oxygen::AnimationNone, tiles ); }
+        { renderHole( painter, color, rect, options, -1, Carbon::AnimationNone, tiles ); }
 
         //* generic hole (with animated glow)
-        void renderHole( QPainter*, const QColor&, const QRect&, StyleOptions, qreal, Oxygen::AnimationMode, TileSet::Tiles = TileSet::Ring );
+        void renderHole( QPainter*, const QColor&, const QRect&, StyleOptions, qreal, Carbon::AnimationMode, TileSet::Tiles = TileSet::Ring );
 
         TileSet *holeFlat( const QColor&, qreal shade, bool fill = true, int size = TileSet::DefaultSize );
 
@@ -187,7 +187,7 @@ namespace Oxygen
         TileSet *selection( const QColor&, int height, bool custom );
 
         //* inverse glow
-        /** this method must be public because it is used directly by OxygenStyle to draw dials */
+        /** this method must be public because it is used directly by CarbonStyle to draw dials */
         void drawInverseGlow( QPainter&, const QColor&, int pad, int size, int rsize ) const;
 
         //*@name utility functions
@@ -253,7 +253,7 @@ namespace Oxygen
         TileSetCache _selectionCache;
         TileSetCache _progressBarCache;
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
 
         //* atom used for compositing manager
         xcb_atom_t _compositingManagerAtom;

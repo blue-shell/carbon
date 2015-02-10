@@ -27,11 +27,11 @@ DEALINGS IN THE SOFTWARE.
 
 */
 
-#include "oxygenstyleconfig.h"
-#include "oxygenanimationconfigwidget.h"
-#include "oxygenstyleconfigdata.h"
-#include "../oxygen.h"
-#include "config-liboxygen.h"
+#include "carbonstyleconfig.h"
+#include "carbonanimationconfigwidget.h"
+#include "carbonstyleconfigdata.h"
+#include "../carbon.h"
+#include "config-libcarbon.h"
 
 #include <QTextStream>
 #include <QDBusMessage>
@@ -40,7 +40,7 @@ DEALINGS IN THE SOFTWARE.
 #include <KLocalizedString>
 #include <KSharedConfig>
 #include <KConfigGroup>
-#if !OXYGEN_USE_KDE4
+#if !CARBON_USE_KDE4
 #include <Kdelibs4Migration>
 #endif
 
@@ -51,10 +51,10 @@ DEALINGS IN THE SOFTWARE.
 extern "C"
 {
     Q_DECL_EXPORT QWidget* allocate_kstyle_config(QWidget* parent)
-    { return new Oxygen::StyleConfig(parent); }
+    { return new Carbon::StyleConfig(parent); }
 }
 
-namespace Oxygen
+namespace Carbon
 {
 
     //__________________________________________________________________
@@ -121,7 +121,7 @@ namespace Oxygen
 
         }
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         StyleConfigData::self()->writeConfig();
         #else
         StyleConfigData::self()->save();
@@ -131,13 +131,13 @@ namespace Oxygen
         const QString kde4ConfigDirPath = migration.saveLocation("config");
 
         QScopedPointer<KConfig> kde4Config(new KConfig);
-        StyleConfigData::self()->config()->copyTo(kde4ConfigDirPath+"/oxygenrc", kde4Config.data());
+        StyleConfigData::self()->config()->copyTo(kde4ConfigDirPath+"/carbonrc", kde4Config.data());
         kde4Config->sync();
 
         #endif
 
         // emit dbus signal
-        QDBusMessage message( QDBusMessage::createSignal( QStringLiteral( "/OxygenStyle" ),  QStringLiteral( "org.kde.Oxygen.Style" ), QStringLiteral( "reparseConfiguration" ) ) );
+        QDBusMessage message( QDBusMessage::createSignal( QStringLiteral( "/CarbonStyle" ),  QStringLiteral( "org.kde.Carbon.Style" ), QStringLiteral( "reparseConfiguration" ) ) );
         QDBusConnection::sessionBus().send(message);
 
     }
@@ -153,7 +153,7 @@ namespace Oxygen
     void StyleConfig::reset( void )
     {
         // reparse configuration
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         StyleConfigData::self()->readConfig();
         #else
         StyleConfigData::self()->load();

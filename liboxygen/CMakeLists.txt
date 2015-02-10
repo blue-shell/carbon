@@ -1,58 +1,58 @@
-add_definitions(-DTRANSLATION_DOMAIN=\"liboxygenstyleconfig\")
+add_definitions(-DTRANSLATION_DOMAIN=\"libcarbonstyleconfig\")
 
 ################# configuration #################
-configure_file(config-liboxygen.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-liboxygen.h)
+configure_file(config-libcarbon.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-libcarbon.h)
 
-################# liboxygenstyle #################
-set(oxygenstyle_LIB_SRCS
-    oxygenanimation.cpp
-    oxygenhelper.cpp
-    oxygenitemmodel.cpp
-    oxygenshadowcache.cpp
-    oxygentileset.cpp
-    oxygenutil.cpp)
+################# libcarbonstyle #################
+set(carbonstyle_LIB_SRCS
+    carbonanimation.cpp
+    carbonhelper.cpp
+    carbonitemmodel.cpp
+    carbonshadowcache.cpp
+    carbontileset.cpp
+    carbonutil.cpp)
 
-if(OXYGEN_USE_KDE4)
+if(CARBON_USE_KDE4)
 
-  kde4_add_kcfg_files(oxygenstyle_LIB_SRCS
-    oxygenactiveshadowconfiguration.kcfgc
-    oxygeninactiveshadowconfiguration.kcfgc
+  kde4_add_kcfg_files(carbonstyle_LIB_SRCS
+    carbonactiveshadowconfiguration.kcfgc
+    carboninactiveshadowconfiguration.kcfgc
  )
 
-  kde4_add_library(oxygenstyle SHARED ${oxygenstyle_LIB_SRCS})
+  kde4_add_library(carbonstyle SHARED ${carbonstyle_LIB_SRCS})
 
-  generate_export_header(oxygenstyle BASE_NAME oxygen EXPORT_FILE_NAME oxygen_export.h)
+  generate_export_header(carbonstyle BASE_NAME carbon EXPORT_FILE_NAME carbon_export.h)
 
-  target_link_libraries(oxygenstyle ${KDE4_KDEUI_LIBS})
+  target_link_libraries(carbonstyle ${KDE4_KDEUI_LIBS})
 
-  if(OXYGEN_HAVE_X11)
-    target_link_libraries(oxygenstyle ${X11_XCB_LIBRARIES})
-    target_link_libraries(oxygenstyle ${XCB_LIBRARIES})
+  if(CARBON_HAVE_X11)
+    target_link_libraries(carbonstyle ${X11_XCB_LIBRARIES})
+    target_link_libraries(carbonstyle ${XCB_LIBRARIES})
   endif()
 
-  set_target_properties(oxygenstyle PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
+  set_target_properties(carbonstyle PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
 
  if(WIN32)
       # As stated in http://msdn.microsoft.com/en-us/library/4hwaceh6.aspx M_PI only gets defined
       # when using MSVC if _USE_MATH_DEFINES is defined (this is needed for angle.cpp)
-      target_compile_definitions(oxygenstyle PRIVATE _USE_MATH_DEFINES _GNU_SOURCE)
+      target_compile_definitions(carbonstyle PRIVATE _USE_MATH_DEFINES _GNU_SOURCE)
   endif()
-  install(TARGETS oxygenstyle ${INSTALL_TARGETS_DEFAULT_ARGS})
+  install(TARGETS carbonstyle ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 else()
 
-  kconfig_add_kcfg_files(oxygenstyle_LIB_SRCS
-    oxygenactiveshadowconfiguration.kcfgc
-    oxygeninactiveshadowconfiguration.kcfgc
+  kconfig_add_kcfg_files(carbonstyle_LIB_SRCS
+    carbonactiveshadowconfiguration.kcfgc
+    carboninactiveshadowconfiguration.kcfgc
  )
 
-  add_library(oxygenstyle5 ${oxygenstyle_LIB_SRCS})
+  add_library(carbonstyle5 ${carbonstyle_LIB_SRCS})
 
-  generate_export_header(oxygenstyle5 BASE_NAME oxygen EXPORT_FILE_NAME oxygen_export.h)
+  generate_export_header(carbonstyle5 BASE_NAME carbon EXPORT_FILE_NAME carbon_export.h)
 
   # NB: although we install no headers, we still need to have a link
-  #     interface, since other Oxygen targets link to this library
-  target_link_libraries(oxygenstyle5
+  #     interface, since other Carbon targets link to this library
+  target_link_libraries(carbonstyle5
       PUBLIC
           Qt5::Core
           Qt5::Gui
@@ -63,80 +63,80 @@ else()
           KF5::GuiAddons
  )
 
-  target_include_directories(oxygenstyle5 PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
+  target_include_directories(carbonstyle5 PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
 
-  if(OXYGEN_HAVE_X11)
-      target_link_libraries(oxygenstyle5 PRIVATE XCB::XCB Qt5::X11Extras)
+  if(CARBON_HAVE_X11)
+      target_link_libraries(carbonstyle5 PRIVATE XCB::XCB Qt5::X11Extras)
   endif()
 
-  set_target_properties(oxygenstyle5 PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
+  set_target_properties(carbonstyle5 PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
   if(WIN32)
       # As stated in http://msdn.microsoft.com/en-us/library/4hwaceh6.aspx M_PI only gets defined
       # when using MSVC if _USE_MATH_DEFINES is defined (this is needed for angle.cpp)
-      target_compile_definitions(oxygenstyle5 PRIVATE _USE_MATH_DEFINES _GNU_SOURCE)
+      target_compile_definitions(carbonstyle5 PRIVATE _USE_MATH_DEFINES _GNU_SOURCE)
   endif()
-  install(TARGETS oxygenstyle5 ${INSTALL_TARGETS_DEFAULT_ARGS})
+  install(TARGETS carbonstyle5 ${INSTALL_TARGETS_DEFAULT_ARGS})
 
 endif()
 
-################# liboxygenstyleconfig #################
-set(oxygenstyleconfig_LIB_SRCS
-    oxygenanimationconfigitem.cpp
-    oxygenbaseanimationconfigwidget.cpp
-    oxygengenericanimationconfigitem.cpp
-    oxygenshadowconfigwidget.cpp
+################# libcarbonstyleconfig #################
+set(carbonstyleconfig_LIB_SRCS
+    carbonanimationconfigitem.cpp
+    carbonbaseanimationconfigwidget.cpp
+    carbongenericanimationconfigitem.cpp
+    carbonshadowconfigwidget.cpp
 )
 
-set(oxygenstyleconfig_LIB_FORMS
-    ui/oxygenanimationconfigitem.ui
-    ui/oxygenanimationconfigwidget.ui
-    ui/oxygengenericanimationconfigbox.ui
-    ui/oxygenshadowconfigurationui.ui
+set(carbonstyleconfig_LIB_FORMS
+    ui/carbonanimationconfigitem.ui
+    ui/carbonanimationconfigwidget.ui
+    ui/carbongenericanimationconfigbox.ui
+    ui/carbonshadowconfigurationui.ui
 )
 
-if(OXYGEN_USE_KDE4)
+if(CARBON_USE_KDE4)
 
-  kde4_add_ui_files(oxygenstyleconfig_LIB_FORMS_HEADERS ${oxygenstyleconfig_LIB_FORMS})
-  kde4_add_kcfg_files(oxygenstyleconfig_LIB_SRCS
-      oxygenactiveshadowconfiguration.kcfgc
-      oxygeninactiveshadowconfiguration.kcfgc
+  kde4_add_ui_files(carbonstyleconfig_LIB_FORMS_HEADERS ${carbonstyleconfig_LIB_FORMS})
+  kde4_add_kcfg_files(carbonstyleconfig_LIB_SRCS
+      carbonactiveshadowconfiguration.kcfgc
+      carboninactiveshadowconfiguration.kcfgc
  )
 
-  kde4_add_library(oxygenstyleconfig SHARED
-      ${oxygenstyleconfig_LIB_SRCS}
-      ${oxygenstyleconfig_LIB_FORMS_HEADERS})
+  kde4_add_library(carbonstyleconfig SHARED
+      ${carbonstyleconfig_LIB_SRCS}
+      ${carbonstyleconfig_LIB_FORMS_HEADERS})
 
-  generate_export_header(oxygenstyleconfig BASE_NAME oxygen_config EXPORT_FILE_NAME oxygen_config_export.h)
+  generate_export_header(carbonstyleconfig BASE_NAME carbon_config EXPORT_FILE_NAME carbon_config_export.h)
 
-  target_link_libraries(oxygenstyleconfig ${KDE4_KDEUI_LIBS})
+  target_link_libraries(carbonstyleconfig ${KDE4_KDEUI_LIBS})
 
-  set_target_properties(oxygenstyleconfig PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
-  install(TARGETS oxygenstyleconfig ${INSTALL_TARGETS_DEFAULT_ARGS})
+  set_target_properties(carbonstyleconfig PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
+  install(TARGETS carbonstyleconfig ${INSTALL_TARGETS_DEFAULT_ARGS})
 
   # NB: although we install no headers, we still need to have a link
-  #     interface, since other Oxygen targets link to this library
-  target_link_libraries(oxygenstyleconfig oxygenstyle)
+  #     interface, since other Carbon targets link to this library
+  target_link_libraries(carbonstyleconfig carbonstyle)
 
 else()
 
-  ki18n_wrap_ui(oxygenstyleconfig_LIB_FORMS_HEADERS ${oxygenstyleconfig_LIB_FORMS})
+  ki18n_wrap_ui(carbonstyleconfig_LIB_FORMS_HEADERS ${carbonstyleconfig_LIB_FORMS})
 
-  kconfig_add_kcfg_files(oxygenstyleconfig_LIB_SRCS
-      oxygenactiveshadowconfiguration.kcfgc
-      oxygeninactiveshadowconfiguration.kcfgc
+  kconfig_add_kcfg_files(carbonstyleconfig_LIB_SRCS
+      carbonactiveshadowconfiguration.kcfgc
+      carboninactiveshadowconfiguration.kcfgc
  )
 
-  add_library(oxygenstyleconfig5 SHARED
-      ${oxygenstyleconfig_LIB_SRCS}
-      ${oxygenstyleconfig_LIB_FORMS_HEADERS})
+  add_library(carbonstyleconfig5 SHARED
+      ${carbonstyleconfig_LIB_SRCS}
+      ${carbonstyleconfig_LIB_FORMS_HEADERS})
 
-  generate_export_header(oxygenstyleconfig5 BASE_NAME oxygen_config EXPORT_FILE_NAME oxygen_config_export.h)
+  generate_export_header(carbonstyleconfig5 BASE_NAME carbon_config EXPORT_FILE_NAME carbon_config_export.h)
 
   # NB: although we install no headers, we still need to have a link
-  #     interface, since other Oxygen targets link to this library
-  target_link_libraries(oxygenstyleconfig5
+  #     interface, since other Carbon targets link to this library
+  target_link_libraries(carbonstyleconfig5
        PUBLIC
-          oxygenstyle5
+          carbonstyle5
           Qt5::Core
           Qt5::Gui
           Qt5::Widgets
@@ -144,8 +144,8 @@ else()
           KF5::I18n
  )
 
-  set_target_properties(oxygenstyleconfig5 PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
-  install(TARGETS oxygenstyleconfig5 ${INSTALL_TARGETS_DEFAULT_ARGS})
+  set_target_properties(carbonstyleconfig5 PROPERTIES VERSION ${PROJECT_VERSION} SOVERSION ${PROJECT_VERSION_MAJOR})
+  install(TARGETS carbonstyleconfig5 ${INSTALL_TARGETS_DEFAULT_ARGS})
   # Note: no headers installed
 
 endif()

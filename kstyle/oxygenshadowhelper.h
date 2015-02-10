@@ -1,8 +1,8 @@
-#ifndef oxygenshadowhelper_h
-#define oxygenshadowhelper_h
+#ifndef carbonshadowhelper_h
+#define carbonshadowhelper_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenshadowhelper.h
+// carbonshadowhelper.h
 // handle shadow pixmaps passed to window manager via X property
 // -------------------
 //
@@ -27,18 +27,18 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen.h"
-#include "oxygentileset.h"
-#include "config-liboxygen.h"
+#include "carbon.h"
+#include "carbontileset.h"
+#include "config-libcarbon.h"
 
 #include <QObject>
 #include <QMap>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <xcb/xcb.h>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! forward declaration
@@ -167,7 +167,7 @@ namespace Oxygen
         //! shadow size
         int _size;
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
 
         //! graphical context
         xcb_gcontext_t _gc;

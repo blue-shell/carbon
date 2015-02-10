@@ -1,8 +1,8 @@
-#ifndef oxygensimulator_h
-#define oxygensimulator_h
+#ifndef carbonsimulator_h
+#define carbonsimulator_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygensimulator.h
+// carbonsimulator.h
 // simulates event chain passed to the application
 // -------------------
 //
@@ -27,7 +27,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "../oxygen.h"
+#include "../carbon.h"
 
 #include <KLocalizedString>
 #include <QAbstractButton>
@@ -41,7 +41,7 @@
 #include <QObject>
 #include <QTimerEvent>
 
-namespace Oxygen
+namespace Carbon
 {
     class Simulator: public QObject
     {

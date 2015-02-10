@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentoolboxengine.h
+// carbontoolboxengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -25,9 +25,9 @@
 //////////////////////////////////////////////////////////////////////////////
 
 
-#include "oxygentoolboxengine.h"
+#include "carbontoolboxengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

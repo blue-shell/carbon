@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenubardata.cpp
+// carbonmenubardata.cpp
 // data container for QMenuBar animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmenubardata.h"
+#include "carbonmenubardata.h"
 
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

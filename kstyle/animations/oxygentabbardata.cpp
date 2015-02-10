@@ -18,7 +18,7 @@
  *************************************************************************/
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentabbardata.cpp
+// carbontabbardata.cpp
 // data container for QTabBar animations
 // -------------------
 //
@@ -43,12 +43,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentabbardata.h"
+#include "carbontabbardata.h"
 
 #include <QHoverEvent>
 #include <QTabBar>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

@@ -1,8 +1,8 @@
-#ifndef oxygentransitiondata_h
-#define oxygentransitiondata_h
+#ifndef carbontransitiondata_h
+#define carbontransitiondata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentransitiondata.h
+// carbontransitiondata.h
 // data container for generic transitions
 // -------------------
 //
@@ -27,13 +27,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitionwidget.h"
+#include "carbontransitionwidget.h"
 
 #include <QObject>
 #include <QTime>
 #include <QWidget>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! generic data

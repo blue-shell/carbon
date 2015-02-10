@@ -1,9 +1,9 @@
-#ifndef oxygenstyle_h
-#define oxygenstyle_h
+#ifndef carbonstyle_h
+#define carbonstyle_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenstyle.h
-// Oxygen widget style for KDE 4
+// carbonstyle.h
+// Carbon widget style for KDE 4
 // -------------------
 //
 // Copyright (C) 2009-2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -47,9 +47,9 @@
 // Boston, MA 02110-1301, USA.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen.h"
-#include "oxygentileset.h"
-#include "config-liboxygen.h"
+#include "carbon.h"
+#include "carbontileset.h"
+#include "config-libcarbon.h"
 
 #include <KStyle>
 
@@ -65,12 +65,12 @@
 
 #include <QIcon>
 
-namespace OxygenPrivate
+namespace CarbonPrivate
 {
     class TabBarData;
 }
 
-namespace Oxygen
+namespace Carbon
 {
 
     class Animations;
@@ -87,13 +87,13 @@ namespace Oxygen
     class BlurHelper;
 
     //* convenience typedef for base class
-    #if OXYGEN_USE_KDE4
+    #if CARBON_USE_KDE4
     using ParentStyleClass = QCommonStyle;
     #else
     using ParentStyleClass = KStyle;
     #endif
 
-    //* base class for oxygen style
+    //* base class for carbon style
     /** it is responsible to draw all the primitives to be displayed on screen, on request from Qt paint engine */
     class Style: public ParentStyleClass
     {
@@ -644,7 +644,7 @@ namespace Oxygen
         WidgetExplorer* _widgetExplorer;
 
         //* tabBar data
-        OxygenPrivate::TabBarData* _tabBarData;
+        CarbonPrivate::TabBarData* _tabBarData;
 
         //* splitter Factory, to extend splitters hit area
         SplitterFactory* _splitterFactory;
@@ -673,7 +673,7 @@ namespace Oxygen
         //* tab close button icon (cached)
         mutable QIcon _tabCloseIcon;
 
-        friend class OxygenPrivate::TabBarData;
+        friend class CarbonPrivate::TabBarData;
 
     };
 

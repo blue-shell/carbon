@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygensimulator.cpp
+// carbonsimulator.cpp
 // simulates event chain passed to the application
 // -------------------
 //
@@ -26,7 +26,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygensimulator.h"
+#include "carbonsimulator.h"
 
 
 #include <QAbstractItemView>
@@ -57,7 +57,7 @@
 #include <ctime>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________________________________

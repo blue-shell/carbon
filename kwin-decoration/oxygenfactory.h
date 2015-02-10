@@ -1,8 +1,8 @@
-#ifndef oxygenfactory_h
-#define oxygenfactory_h
+#ifndef carbonfactory_h
+#define carbonfactory_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygen.h
+// carbon.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira <hugo.pereira@free.fr>
@@ -27,20 +27,20 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfiguration.h"
-#include "oxygendecorationdefines.h"
-#include "oxygendecohelper.h"
-#include "oxygenshadowcache.h"
+#include "carbonconfiguration.h"
+#include "carbondecorationdefines.h"
+#include "carbondecohelper.h"
+#include "carbonshadowcache.h"
 
 #include <QObject>
 #include <kdecorationfactory.h>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class Client;
 
-    #if OXYGEN_USE_KDE4
+    #if CARBON_USE_KDE4
     using ParentFactoryClass = KDecorationFactoryUnstable;
     #else
     using ParentFactoryClass = KDecorationFactory;
@@ -50,13 +50,13 @@ namespace Oxygen
     class Factory: public ParentFactoryClass
     {
 
-        #if !OXYGEN_USE_KDE4
+        #if !CARBON_USE_KDE4
         Q_OBJECT
         #endif
 
         public:
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
 
         //* constructor
         explicit Factory( void );

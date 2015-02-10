@@ -1,9 +1,9 @@
-#ifndef oxygensliderdemowidget_h
-#define oxygensliderdemowidget_h
+#ifndef carbonsliderdemowidget_h
+#define carbonsliderdemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygensliderdemowidget.h
-// oxygen sliders demo widget
+// carbonsliderdemowidget.h
+// carbon sliders demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -31,10 +31,10 @@
 #include <QProgressBar>
 #include <QCheckBox>
 
-#include "oxygendemowidget.h"
-#include "ui_oxygensliderdemowidget.h"
+#include "carbondemowidget.h"
+#include "ui_carbonsliderdemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     class ProgressBar: public QObject

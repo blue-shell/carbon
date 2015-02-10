@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenshadowcache.cpp
+// carbonshadowcache.cpp
 // handles caching of TileSet objects to draw shadows
 // -------------------
 //
@@ -24,16 +24,16 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenshadowcache.h"
-#include "oxygenactiveshadowconfiguration.h"
-#include "oxygeninactiveshadowconfiguration.h"
+#include "carbonshadowcache.h"
+#include "carbonactiveshadowconfiguration.h"
+#include "carboninactiveshadowconfiguration.h"
 
 #include <cmath>
 #include <KColorUtils>
 #include <QPainter>
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________________
@@ -55,7 +55,7 @@ namespace Oxygen
         if( !_enabled ) setEnabled( true );
 
         // shadows
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         ActiveShadowConfiguration::self()->readConfig();
         InactiveShadowConfiguration::self()->readConfig();
         #else

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdiwindowshadow.cpp
+// carbonmdiwindowshadow.cpp
 // handle MDI windows' shadows
 // -------------------
 //
@@ -27,15 +27,15 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmdiwindowshadow.h"
-#include "oxygenshadowcache.h"
+#include "carbonmdiwindowshadow.h"
+#include "carbonshadowcache.h"
 
 #include <QMdiArea>
 #include <QMdiSubWindow>
 #include <QPainter>
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________________

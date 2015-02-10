@@ -24,7 +24,7 @@ set(COLORS
     olympus
     olympus-inv
     orchid
-    oxygen
+    carbon
     peach
     purple
     red

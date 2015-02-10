@@ -1,8 +1,8 @@
-#ifndef oxygentransitions_h
-#define oxygentransitions_h
+#ifndef carbontransitions_h
+#define carbontransitions_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentransitions.h
+// carbontransitions.h
 // container for all transition engines
 // -------------------
 //
@@ -27,12 +27,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygencomboboxengine.h"
-#include "oxygenlabelengine.h"
-#include "oxygenlineeditengine.h"
-#include "oxygenstackedwidgetengine.h"
+#include "carboncomboboxengine.h"
+#include "carbonlabelengine.h"
+#include "carbonlineeditengine.h"
+#include "carbonstackedwidgetengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! stores engines

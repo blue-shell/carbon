@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenuengine.cpp
+// carbonmenuengine.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmenuengine.h"
+#include "carbonmenuengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________
@@ -137,7 +137,7 @@ namespace Oxygen
 
         switch( index )
         {
-            case Oxygen::Previous:
+            case Carbon::Previous:
             {
                 if( Animation::Pointer animation = data.data()->animation() )
                 {
@@ -145,7 +145,7 @@ namespace Oxygen
                 } else return false;
             }
 
-            case Oxygen::Current:
+            case Carbon::Current:
             {
                 if( data.data()->animation() && data.data()->animation().data()->isRunning() ) return true;
                 else return false;

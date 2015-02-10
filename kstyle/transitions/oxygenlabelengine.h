@@ -1,8 +1,8 @@
-#ifndef oxygenlabelengine_h
-#define oxygenlabelengine_h
+#ifndef carbonlabelengine_h
+#define carbonlabelengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlabelengine.h
+// carbonlabelengine.h
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenlabeldata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonlabeldata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! used for simple widgets

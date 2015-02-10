@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygencomboboxengine.cpp
+// carboncomboboxengine.cpp
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -26,9 +26,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygencomboboxengine.h"
+#include "carboncomboboxengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

@@ -1,8 +1,8 @@
-#ifndef oxygensizegrip_h
-#define oxygensizegrip_h
+#ifndef carbonsizegrip_h
+#define carbonsizegrip_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygensizegrip.h
+// carbonsizegrip.h
 // bottom right size grip for borderless windows
 // -------------------
 //
@@ -27,14 +27,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenclient.h"
-#include "oxygendecorationdefines.h"
+#include "carbonclient.h"
+#include "carbondecorationdefines.h"
 
 #include <QWidget>
 #include <QPaintEvent>
 #include <QMouseEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class Client;
@@ -88,7 +88,7 @@ namespace Oxygen
             GripSize = 14
         };
 
-        // oxygen client
+        // carbon client
         WeakPointer<Client> _client;
 
     };

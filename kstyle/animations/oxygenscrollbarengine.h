@@ -1,8 +1,8 @@
-#ifndef oxygenscrollbarengine_h
-#define oxygenscrollbarengine_h
+#ifndef carbonscrollbarengine_h
+#define carbonscrollbarengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenscrollbarengine.h
+// carbonscrollbarengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenscrollbardata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonscrollbardata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! stores scrollbar hovered action and timeLine
@@ -101,7 +101,7 @@ namespace Oxygen
         {
             BaseEngine::setEnabled( value );
             /*
-            do not disable the map directly, because the contained OxygenScrollbarData
+            do not disable the map directly, because the contained CarbonScrollbarData
             are also used in non animated mode to store scrollbar arrows rect. However
             do disable all contains DATA object, in order to prevent actual animations
             */

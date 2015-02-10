@@ -1,8 +1,8 @@
-#ifndef oxygentoolbarengine_h
-#define oxygentoolbarengine_h
+#ifndef carbontoolbarengine_h
+#define carbontoolbarengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentoolbarengine.h
+// carbontoolbarengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygentoolbardata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbontoolbardata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! follow-mouse toolbar animation

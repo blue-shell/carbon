@@ -23,18 +23,18 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenshadowconfigwidget.h"
-#include "oxygenactiveshadowconfiguration.h"
-#include "oxygeninactiveshadowconfiguration.h"
-#include "ui_oxygenshadowconfigurationui.h"
+#include "carbonshadowconfigwidget.h"
+#include "carbonactiveshadowconfiguration.h"
+#include "carboninactiveshadowconfiguration.h"
+#include "ui_carbonshadowconfigurationui.h"
 
-#include "oxygenutil.h"
+#include "carbonutil.h"
 
 #include <KLocalizedString>
 #include <QLabel>
 #include <QLayout>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_________________________________________________________

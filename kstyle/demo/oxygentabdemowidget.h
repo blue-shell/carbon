@@ -1,9 +1,9 @@
-#ifndef oxygentabdemowidget_h
-#define oxygentabdemowidget_h
+#ifndef carbontabdemowidget_h
+#define carbontabdemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentabdemowidget.h
-// oxygen tabwidget demo widget
+// carbontabdemowidget.h
+// carbon tabwidget demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -30,10 +30,10 @@
 #include <QWidget>
 #include <QToolButton>
 
-#include "ui_oxygentabdemowidget.h"
-#include "oxygendemowidget.h"
+#include "ui_carbontabdemowidget.h"
+#include "carbondemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     class TabDemoWidget: public DemoWidget

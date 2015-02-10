@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenscrollbarengine.cpp
+// carbonscrollbarengine.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenscrollbarengine.h"
+#include "carbonscrollbarengine.h"
 
 #include <QEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________
@@ -37,7 +37,7 @@ namespace Oxygen
 
         // check widget
         /*
-        note: widget is registered even if animation is disabled because OxygenScrollBarData
+        note: widget is registered even if animation is disabled because CarbonScrollBarData
         is also used in non-animated mode to store arrow rect for hover highlight
         */
         if( !widget ) return false;

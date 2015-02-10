@@ -1,8 +1,8 @@
-#ifndef oxygenmenu_data_h
-#define oxygenmenu_data_h
+#ifndef carbonmenu_data_h
+#define carbonmenu_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenudata.h
+// carbonmenudata.h
 // data container for QMenu animations
 // -------------------
 //
@@ -27,10 +27,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmenubardata.h"
+#include "carbonmenubardata.h"
 #include <QMenu>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! menubar data

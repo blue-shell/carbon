@@ -1,8 +1,8 @@
-#ifndef oxygen_shadowCacheh
-#define oxygen_shadowCacheh
+#ifndef carbon_shadowCacheh
+#define carbon_shadowCacheh
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenshadowcache.h
+// carbonshadowcache.h
 // handles caching of TileSet objects to draw shadows
 // -------------------
 //
@@ -27,17 +27,17 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenhelper.h"
-#include "oxygen_export.h"
+#include "carbonhelper.h"
+#include "carbon_export.h"
 
 #include <QCache>
 #include <QRadialGradient>
 #include <cmath>
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class OXYGEN_EXPORT ShadowCache
+    class CARBON_EXPORT ShadowCache
     {
         public:
 

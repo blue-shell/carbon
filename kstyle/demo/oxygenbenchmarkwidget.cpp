@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbenchmarkwidget.cpp
-// oxygen buttons demo widget
+// carbonbenchmarkwidget.cpp
+// carbon buttons demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,12 +24,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbenchmarkwidget.h"
+#include "carbonbenchmarkwidget.h"
 
 #include <QIcon>
 #include <QAbstractItemView>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

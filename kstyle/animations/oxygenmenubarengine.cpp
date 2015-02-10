@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenubarengine.cpp
+// carbonmenubarengine.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmenubarengine.h"
+#include "carbonmenubarengine.h"
 
 #include <QEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

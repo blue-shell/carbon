@@ -1,8 +1,8 @@
-#ifndef oxygenmdiwindow_data_h
-#define oxygenmdiwindow_data_h
+#ifndef carbonmdiwindow_data_h
+#define carbonmdiwindow_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdiwindowdata.h
+// carbonmdiwindowdata.h
 // mdi window data container for window titlebar buttons
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
+#include "carbonanimationdata.h"
 
 #include <QStyle>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! handles mdiwindow arrows hover

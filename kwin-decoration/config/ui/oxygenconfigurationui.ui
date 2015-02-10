@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>OxygenConfigurationUI</class>
- <widget class="QWidget" name="OxygenConfigurationUI">
+ <class>CarbonConfigurationUI</class>
+ <widget class="QWidget" name="CarbonConfigurationUI">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -320,7 +320,7 @@
        <item row="0" column="0">
         <layout class="QHBoxLayout" name="horizontalLayout_7">
          <item>
-          <widget class="Oxygen::ShadowConfigWidget" name="inactiveShadowConfiguration">
+          <widget class="Carbon::ShadowConfigWidget" name="inactiveShadowConfiguration">
            <property name="title">
             <string>Window Drop-Down Shadow</string>
            </property>
@@ -330,7 +330,7 @@
           </widget>
          </item>
          <item>
-          <widget class="Oxygen::ShadowConfigWidget" name="activeShadowConfiguration">
+          <widget class="Carbon::ShadowConfigWidget" name="activeShadowConfiguration">
            <property name="title">
             <string>Active Window Glow</string>
            </property>
@@ -362,7 +362,7 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>
-        <widget class="Oxygen::ExceptionListWidget" name="exceptions" native="true"/>
+        <widget class="Carbon::ExceptionListWidget" name="exceptions" native="true"/>
        </item>
       </layout>
      </widget>
@@ -400,15 +400,15 @@
    <header>kcombobox.h</header>
   </customwidget>
   <customwidget>
-   <class>Oxygen::ShadowConfigWidget</class>
+   <class>Carbon::ShadowConfigWidget</class>
    <extends>QGroupBox</extends>
-   <header>oxygenshadowconfigwidget.h</header>
+   <header>carbonshadowconfigwidget.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>Oxygen::ExceptionListWidget</class>
+   <class>Carbon::ExceptionListWidget</class>
    <extends>QWidget</extends>
-   <header>oxygenexceptionlistwidget.h</header>
+   <header>carbonexceptionlistwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

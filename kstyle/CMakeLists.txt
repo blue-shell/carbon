@@ -1,4 +1,4 @@
-project(kstyle-oxygen)
+project(kstyle-carbon)
 
 ################# includes #################
 include_directories(
@@ -7,107 +7,107 @@ include_directories(
     transitions
 )
 
-include_directories(${CMAKE_SOURCE_DIR}/liboxygen)
-include_directories(${CMAKE_BINARY_DIR}/liboxygen)
+include_directories(${CMAKE_SOURCE_DIR}/libcarbon)
+include_directories(${CMAKE_BINARY_DIR}/libcarbon)
 
 ########### next target ###############
-set(oxygen_PART_SRCS
-    animations/oxygenanimations.cpp
-    animations/oxygenanimationdata.cpp
-    animations/oxygenbaseengine.cpp
-    animations/oxygenbusyindicatordata.cpp
-    animations/oxygenbusyindicatorengine.cpp
-    animations/oxygendockseparatordata.cpp
-    animations/oxygendockseparatorengine.cpp
-    animations/oxygenenabledata.cpp
-    animations/oxygengenericdata.cpp
-    animations/oxygenheaderviewdata.cpp
-    animations/oxygenheaderviewengine.cpp
-    animations/oxygenmdiwindowdata.cpp
-    animations/oxygenmdiwindowengine.cpp
-    animations/oxygenmenubardata.cpp
-    animations/oxygenmenubarengine.cpp
-    animations/oxygenmenudata.cpp
-    animations/oxygenmenuengine.cpp
-    animations/oxygenprogressbardata.cpp
-    animations/oxygenprogressbarengine.cpp
-    animations/oxygenscrollbardata.cpp
-    animations/oxygenscrollbarengine.cpp
-    animations/oxygenspinboxdata.cpp
-    animations/oxygenspinboxengine.cpp
-    animations/oxygensplitterengine.cpp
-    animations/oxygentabbardata.cpp
-    animations/oxygentabbarengine.cpp
-    animations/oxygentoolbardata.cpp
-    animations/oxygentoolbarengine.cpp
-    animations/oxygentoolboxengine.cpp
-    animations/oxygenwidgetstatedata.cpp
-    animations/oxygenwidgetstateengine.cpp
-    debug/oxygenwidgetexplorer.cpp
-    transitions/oxygencomboboxdata.cpp
-    transitions/oxygencomboboxengine.cpp
-    transitions/oxygenlabeldata.cpp
-    transitions/oxygenlabelengine.cpp
-    transitions/oxygenlineeditdata.cpp
-    transitions/oxygenlineeditengine.cpp
-    transitions/oxygenstackedwidgetdata.cpp
-    transitions/oxygenstackedwidgetengine.cpp
-    transitions/oxygentransitiondata.cpp
-    transitions/oxygentransitions.cpp
-    transitions/oxygentransitionwidget.cpp
-    oxygenblurhelper.cpp
-    oxygenframeshadow.cpp
-    oxygenmdiwindowshadow.cpp
-    oxygenmnemonics.cpp
-    oxygenpropertynames.cpp
-    oxygenshadowhelper.cpp
-    oxygensplitterproxy.cpp
-    oxygenstyle.cpp
-    oxygenstylehelper.cpp
-    oxygenstyleplugin.cpp
-    oxygenwindowmanager.cpp
+set(carbon_PART_SRCS
+    animations/carbonanimations.cpp
+    animations/carbonanimationdata.cpp
+    animations/carbonbaseengine.cpp
+    animations/carbonbusyindicatordata.cpp
+    animations/carbonbusyindicatorengine.cpp
+    animations/carbondockseparatordata.cpp
+    animations/carbondockseparatorengine.cpp
+    animations/carbonenabledata.cpp
+    animations/carbongenericdata.cpp
+    animations/carbonheaderviewdata.cpp
+    animations/carbonheaderviewengine.cpp
+    animations/carbonmdiwindowdata.cpp
+    animations/carbonmdiwindowengine.cpp
+    animations/carbonmenubardata.cpp
+    animations/carbonmenubarengine.cpp
+    animations/carbonmenudata.cpp
+    animations/carbonmenuengine.cpp
+    animations/carbonprogressbardata.cpp
+    animations/carbonprogressbarengine.cpp
+    animations/carbonscrollbardata.cpp
+    animations/carbonscrollbarengine.cpp
+    animations/carbonspinboxdata.cpp
+    animations/carbonspinboxengine.cpp
+    animations/carbonsplitterengine.cpp
+    animations/carbontabbardata.cpp
+    animations/carbontabbarengine.cpp
+    animations/carbontoolbardata.cpp
+    animations/carbontoolbarengine.cpp
+    animations/carbontoolboxengine.cpp
+    animations/carbonwidgetstatedata.cpp
+    animations/carbonwidgetstateengine.cpp
+    debug/carbonwidgetexplorer.cpp
+    transitions/carboncomboboxdata.cpp
+    transitions/carboncomboboxengine.cpp
+    transitions/carbonlabeldata.cpp
+    transitions/carbonlabelengine.cpp
+    transitions/carbonlineeditdata.cpp
+    transitions/carbonlineeditengine.cpp
+    transitions/carbonstackedwidgetdata.cpp
+    transitions/carbonstackedwidgetengine.cpp
+    transitions/carbontransitiondata.cpp
+    transitions/carbontransitions.cpp
+    transitions/carbontransitionwidget.cpp
+    carbonblurhelper.cpp
+    carbonframeshadow.cpp
+    carbonmdiwindowshadow.cpp
+    carbonmnemonics.cpp
+    carbonpropertynames.cpp
+    carbonshadowhelper.cpp
+    carbonsplitterproxy.cpp
+    carbonstyle.cpp
+    carbonstylehelper.cpp
+    carbonstyleplugin.cpp
+    carbonwindowmanager.cpp
 )
 
-if(OXYGEN_USE_KDE4)
+if(CARBON_USE_KDE4)
 
-  kde4_add_kcfg_files(oxygen_PART_SRCS oxygenstyleconfigdata.kcfgc)
-  kde4_add_plugin(oxygen ${oxygen_PART_SRCS})
-  target_link_libraries(oxygen ${KDE4_KDEUI_LIBS})
-  target_link_libraries(oxygen oxygenstyle)
+  kde4_add_kcfg_files(carbon_PART_SRCS carbonstyleconfigdata.kcfgc)
+  kde4_add_plugin(carbon ${carbon_PART_SRCS})
+  target_link_libraries(carbon ${KDE4_KDEUI_LIBS})
+  target_link_libraries(carbon carbonstyle)
 
-  if(OXYGEN_HAVE_X11)
-    target_link_libraries(oxygen ${X11_XCB_LIBRARIES})
-    target_link_libraries(oxygen ${XCB_LIBRARIES})
+  if(CARBON_HAVE_X11)
+    target_link_libraries(carbon ${X11_XCB_LIBRARIES})
+    target_link_libraries(carbon ${XCB_LIBRARIES})
   endif()
 
-  install(TARGETS oxygen DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/styles/)
+  install(TARGETS carbon DESTINATION ${PLUGIN_INSTALL_DIR}/plugins/styles/)
 
 else()
 
-  kconfig_add_kcfg_files(oxygen_PART_SRCS oxygenstyleconfigdata.kcfgc)
-  add_library(oxygen MODULE ${oxygen_PART_SRCS})
+  kconfig_add_kcfg_files(carbon_PART_SRCS carbonstyleconfigdata.kcfgc)
+  add_library(carbon MODULE ${carbon_PART_SRCS})
 
-  target_link_libraries(oxygen Qt5::Core Qt5::Gui Qt5::Widgets Qt5::DBus)
-  target_link_libraries(oxygen KF5::GuiAddons KF5::Style KF5::WindowSystem)
-  target_link_libraries(oxygen oxygenstyle5)
+  target_link_libraries(carbon Qt5::Core Qt5::Gui Qt5::Widgets Qt5::DBus)
+  target_link_libraries(carbon KF5::GuiAddons KF5::Style KF5::WindowSystem)
+  target_link_libraries(carbon carbonstyle5)
 
-  if(OXYGEN_HAVE_X11)
-    target_link_libraries(oxygen XCB::XCB)
-    target_link_libraries(oxygen Qt5::X11Extras)
+  if(CARBON_HAVE_X11)
+    target_link_libraries(carbon XCB::XCB)
+    target_link_libraries(carbon Qt5::X11Extras)
   endif()
 
-  install(TARGETS oxygen DESTINATION ${QT_PLUGIN_INSTALL_DIR}/styles/)
+  install(TARGETS carbon DESTINATION ${QT_PLUGIN_INSTALL_DIR}/styles/)
 
 endif()
 
 if(WIN32)
   # As stated in http://msdn.microsoft.com/en-us/library/4hwaceh6.aspx M_PI only gets defined
   # when using MSVC if _USE_MATH_DEFINES is defined (this is needed for angle.cpp)
-  target_compile_definitions(oxygen PRIVATE _USE_MATH_DEFINES _GNU_SOURCE)
+  target_compile_definitions(carbon PRIVATE _USE_MATH_DEFINES _GNU_SOURCE)
 endif()
 
 ########### install files ###############
-install(FILES oxygen.themerc  DESTINATION  ${DATA_INSTALL_DIR}/kstyle/themes)
+install(FILES carbon.themerc  DESTINATION  ${DATA_INSTALL_DIR}/kstyle/themes)
 
 ########### subdirectories ###############
 add_subdirectory(config)

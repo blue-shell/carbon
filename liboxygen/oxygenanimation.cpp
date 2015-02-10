@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimation.h
+// carbonanimation.h
 // stores event filters and maps widgets to animations for animations
 // -------------------
 //
@@ -24,4 +24,4 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimation.h"
+#include "carbonanimation.h"

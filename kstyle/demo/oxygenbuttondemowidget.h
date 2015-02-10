@@ -1,9 +1,9 @@
-#ifndef oxygenbuttondemowidget_h
-#define oxygenbuttondemowidget_h
+#ifndef carbonbuttondemowidget_h
+#define carbonbuttondemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbuttondemowidget.h
-// oxygen buttons demo widget
+// carbonbuttondemowidget.h
+// carbon buttons demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -27,15 +27,15 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendemowidget.h"
-#include "ui_oxygenbuttondemowidget.h"
+#include "carbondemowidget.h"
+#include "ui_carbonbuttondemowidget.h"
 
 #include <QWidget>
 #include <QList>
 #include <QToolBar>
 #include <QToolButton>
 
-namespace Oxygen
+namespace Carbon
 {
     class ButtonDemoWidget: public DemoWidget
     {

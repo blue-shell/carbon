@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygengenericdata.cpp
+// carbongenericdata.cpp
 // generic data container for widget animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygengenericdata.h"
+#include "carbongenericdata.h"
 
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

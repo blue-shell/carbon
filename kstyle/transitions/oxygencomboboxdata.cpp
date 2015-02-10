@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygencomboboxdata.cpp
+// carboncomboboxdata.cpp
 // data container for QComboBox transition
 // -------------------
 //
@@ -26,9 +26,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygencomboboxdata.h"
+#include "carboncomboboxdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________

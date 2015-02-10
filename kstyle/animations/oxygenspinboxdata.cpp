@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenspinboxdata.cpp
+// carbonspinboxdata.cpp
 // spinbox data container for up/down arrow hover (mouse-over) animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenspinboxdata.h"
+#include "carbonspinboxdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________

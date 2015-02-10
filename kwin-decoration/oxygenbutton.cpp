@@ -25,8 +25,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbutton.h"
-#include "oxygenclient.h"
+#include "carbonbutton.h"
+#include "carbonclient.h"
 
 #include <cmath>
 
@@ -37,7 +37,7 @@
 #include <KColorScheme>
 #include <kcommondecoration.h>
 
-namespace Oxygen
+namespace Carbon
 {
     //_______________________________________________
     Button::Button(
@@ -132,7 +132,7 @@ namespace Oxygen
     void Button::paint( QPainter& painter )
     {
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         QPalette palette( this->palette() );
         #else
         QPalette palette( _client.palette() );
@@ -347,7 +347,7 @@ namespace Oxygen
     void Button::parentUpdate( void )
     {
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         if( ( _client.compositingActive() || _client.isPreview() ) && parentWidget() ) parentWidget()->update( geometry().adjusted( -1, -1, 1, 1 ) );
         #else
         if( _client.compositingActive() || _client.isPreview() ) _client.update( geometry().adjusted( -1, -1, 1, 1 ) );

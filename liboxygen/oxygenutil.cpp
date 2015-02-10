@@ -16,9 +16,9 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygenutil.h"
+#include "carbonutil.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________

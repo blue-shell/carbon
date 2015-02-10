@@ -1,8 +1,8 @@
-#ifndef oxygencombobox_datah
-#define oxygencombobox_datah
+#ifndef carboncombobox_datah
+#define carboncombobox_datah
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygencomboboxdata.h
+// carboncomboboxdata.h
 // data container for QComboBox transition
 // -------------------
 //
@@ -27,7 +27,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitiondata.h"
+#include "carbontransitiondata.h"
 
 #include <QString>
 #include <QBasicTimer>
@@ -35,7 +35,7 @@
 #include <QComboBox>
 #include <QLineEdit>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! generic data

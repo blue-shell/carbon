@@ -1,8 +1,8 @@
-#ifndef oxygenmenubardata_imp_h
-#define oxygenmenubardata_imp_h
+#ifndef carbonmenubardata_imp_h
+#define carbonmenubardata_imp_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenubardata_imp.h
+// carbonmenubardata_imp.h
 // implements menubar data templatized methods
 // -------------------
 //
@@ -27,7 +27,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________________________________

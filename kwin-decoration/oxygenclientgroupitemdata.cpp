@@ -1,6 +1,6 @@
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenclientgroupitemdata.cpp
+// carbonclientgroupitemdata.cpp
 // handles tabs' geometry and animations
 // -------------------
 //
@@ -26,10 +26,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenclientgroupitemdata.h"
-#include "oxygenclient.h"
+#include "carbonclientgroupitemdata.h"
+#include "carbonclient.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________________________

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptionmodel.cpp
+// carbonexceptionmodel.cpp
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,9 +23,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenexceptionmodel.h"
+#include "carbonexceptionmodel.h"
 #include <KLocalizedString>
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

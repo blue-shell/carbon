@@ -26,15 +26,15 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen_export.h"
+#include "carbon_export.h"
 
 #include <QAbstractItemModel>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! Job model. Stores job information for display in lists
-    class OXYGEN_EXPORT ItemModel : public QAbstractItemModel
+    class CARBON_EXPORT ItemModel : public QAbstractItemModel
     {
         
         public:

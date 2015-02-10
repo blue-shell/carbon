@@ -1,8 +1,8 @@
-#ifndef oxygentoolbar_data_h
-#define oxygentoolbar_data_h
+#ifndef carbontoolbar_data_h
+#define carbontoolbar_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentoolbardata.h
+// carbontoolbardata.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,10 +27,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
+#include "carbonanimationdata.h"
 #include <QBasicTimer>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! toolbar data

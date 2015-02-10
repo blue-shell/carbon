@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentitleanimationdata.h
+// carbontitleanimationdata.h
 // handles transition when window title is changed
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentitleanimationdata.h"
+#include "carbontitleanimationdata.h"
 
 #include <QPainter>
 
-namespace Oxygen
+namespace Carbon
 {
 
     // use 300 milliseconds for animation lock

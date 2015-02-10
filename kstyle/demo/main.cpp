@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
 // main.cpp
-// oxygen-demo main
+// carbon-demo main
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendemodialog.h"
-#include "../oxygen.h"
-#include "config-liboxygen.h"
+#include "carbondemodialog.h"
+#include "../carbon.h"
+#include "config-libcarbon.h"
 
 #include <QApplication>
 
@@ -39,7 +39,7 @@
 
 #include <KLocalizedString>
 
-namespace Oxygen
+namespace Carbon
 {
 
     int run(int argc, char *argv[])
@@ -55,8 +55,8 @@ namespace Oxygen
         app.setAttribute( Qt::AA_UseHighDpiPixmaps, commandLine.isSet( enableHighDpi ) );
         #endif
 
-        app.setApplicationName( i18n( "Oxygen Demo" ) );
-        app.setWindowIcon( QIcon::fromTheme( QStringLiteral( "oxygen" ) ) );
+        app.setApplicationName( i18n( "Carbon Demo" ) );
+        app.setWindowIcon( QIcon::fromTheme( QStringLiteral( "carbon" ) ) );
         DemoDialog dialog;
         dialog.show();
         bool result = app.exec();
@@ -68,10 +68,10 @@ namespace Oxygen
 //__________________________________________
 int main(int argc, char *argv[])
 {
-    #if !OXYGEN_USE_KDE4
-    KLocalizedString::setApplicationDomain("oxygen_style_demo");
+    #if !CARBON_USE_KDE4
+    KLocalizedString::setApplicationDomain("carbon_style_demo");
     #endif
 
-    return Oxygen::run( argc, argv );
+    return Carbon::run( argc, argv );
 
 }

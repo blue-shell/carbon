@@ -1,8 +1,8 @@
-#ifndef oxygendockseparatorengine_h
-#define oxygendockseparatorengine_h
+#ifndef carbondockseparatorengine_h
+#define carbondockseparatorengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendockseparatorengine.h
+// carbondockseparatorengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygendockseparatordata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbondockseparatordata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! stores dockseparator hovered action and timeLine

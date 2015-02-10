@@ -1,8 +1,8 @@
-#ifndef oxygenprogressbardata_h
-#define oxygenprogressbardata_h
+#ifndef carbonprogressbardata_h
+#define carbonprogressbardata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenprogressbardata.h
+// carbonprogressbardata.h
 // data container for progressbar animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygengenericdata.h"
+#include "carbongenericdata.h"
 #include <QObject>
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
 

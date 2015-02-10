@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenspinboxengine.cpp
+// carbonspinboxengine.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenspinboxengine.h"
+#include "carbonspinboxengine.h"
 
 #include <QEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

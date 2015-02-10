@@ -1,8 +1,8 @@
-#ifndef oxygenenable_data_h
-#define oxygenenable_data_h
+#ifndef carbonenable_data_h
+#define carbonenable_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenenabledata.h
+// carbonenabledata.h
 // generic data container for widget enable/disable animations
 // -------------------
 //
@@ -27,9 +27,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenwidgetstatedata.h"
+#include "carbonwidgetstatedata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! Enable data

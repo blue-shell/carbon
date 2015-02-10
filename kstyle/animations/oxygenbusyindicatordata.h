@@ -1,8 +1,8 @@
-#ifndef oxygenbusyindicatordata_h
-#define oxygenbusyindicatordata_h
+#ifndef carbonbusyindicatordata_h
+#define carbonbusyindicatordata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbusyindicatordata.h
+// carbonbusyindicatordata.h
 // data container for progressbar busy indicator
 // -------------------
 //
@@ -29,7 +29,7 @@
 
 #include <QObject>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class BusyIndicatorData: public QObject

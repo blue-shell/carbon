@@ -1,6 +1,6 @@
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenwidgetstateengine.h
+// carbonwidgetstateengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -25,11 +25,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenwidgetstateengine.h"
+#include "carbonwidgetstateengine.h"
 
-#include "oxygenenabledata.h"
+#include "carbonenabledata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

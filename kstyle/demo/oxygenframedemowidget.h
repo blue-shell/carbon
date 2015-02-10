@@ -1,9 +1,9 @@
-#ifndef oxygenframedemowidget_h
-#define oxygenframedemowidget_h
+#ifndef carbonframedemowidget_h
+#define carbonframedemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenframedemowidget.h
-// oxygen frames demo widget
+// carbonframedemowidget.h
+// carbon frames demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -31,10 +31,10 @@
 #include <QBoxLayout>
 #include <QFrame>
 
-#include "oxygendemowidget.h"
-#include "ui_oxygenframedemowidget.h"
+#include "carbondemowidget.h"
+#include "ui_carbonframedemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
     class FrameDemoWidget: public DemoWidget
     {

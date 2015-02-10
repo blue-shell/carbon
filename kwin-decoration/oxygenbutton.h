@@ -1,5 +1,5 @@
-#ifndef oxygenbutton_h
-#define oxygenbutton_h
+#ifndef carbonbutton_h
+#define carbonbutton_h
 
 //////////////////////////////////////////////////////////////////////////////
 // Button.h
@@ -28,13 +28,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimation.h"
-#include "oxygendecorationdefines.h"
-#include "oxygendecohelper.h"
+#include "carbonanimation.h"
+#include "carbondecorationdefines.h"
+#include "carbondecohelper.h"
 
 #include <kcommondecoration.h>
 
-namespace Oxygen
+namespace Carbon
 {
     class Client;
 
@@ -184,6 +184,6 @@ namespace Oxygen
 
     };
 
-} //namespace Oxygen
+} //namespace Carbon
 
 #endif

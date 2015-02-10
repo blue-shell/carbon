@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentabwidget.cpp
+// carbontabwidget.cpp
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,4 +23,4 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentabwidget.h"
+#include "carbontabwidget.h"

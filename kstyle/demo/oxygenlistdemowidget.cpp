@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlistdemowidget.cpp
-// oxygen lists (and trees) demo widget
+// carbonlistdemowidget.cpp
+// carbon lists (and trees) demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenlistdemowidget.h"
+#include "carbonlistdemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________

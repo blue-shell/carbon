@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenstackedwidgetdata.cpp
+// carbonstackedwidgetdata.cpp
 // data container for QStackedWidget transition
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenstackedwidgetdata.h"
+#include "carbonstackedwidgetdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________

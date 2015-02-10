@@ -1,6 +1,6 @@
 macro(adjust in_size in_xhot in_yhot)
    #math(EXPR out_size "( ${in_size} * ${resolution} ) / 90")
-   # The Oxygen cursors have different default sizes at 90 dpi:
+   # The Carbon cursors have different default sizes at 90 dpi:
    # Some have 24x24 px, others have 32x32 px. This causes some
    # side-effects when you want to choose your cursor size.
    # Instead of the real in_size, we use 24 as convenience value.

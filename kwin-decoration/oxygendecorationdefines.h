@@ -1,7 +1,7 @@
-#ifndef oxygendecorationdefines_h
-#define oxygendecorationdefines_h
+#ifndef carbondecorationdefines_h
+#define carbondecorationdefines_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygendecorationdefines.h
+// carbondecorationdefines.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -25,12 +25,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfiguration.h"
+#include "carbonconfiguration.h"
 
 #include <QSharedPointer>
 #include <QList>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //*@name convenience typedef

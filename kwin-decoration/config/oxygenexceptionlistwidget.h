@@ -1,7 +1,7 @@
-#ifndef oxygenexceptionlistwidget_h
-#define oxygenexceptionlistwidget_h
+#ifndef carbonexceptionlistwidget_h
+#define carbonexceptionlistwidget_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptionlistwidget.h
+// carbonexceptionlistwidget.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -25,11 +25,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "ui_oxygenexceptionlistwidget.h"
-#include "oxygenexceptionmodel.h"
+#include "ui_carbonexceptionlistwidget.h"
+#include "carbonexceptionmodel.h"
 
 //! QDialog used to commit selected files
-namespace Oxygen
+namespace Carbon
 {
 
     class ExceptionListWidget: public QWidget
@@ -112,7 +112,7 @@ namespace Oxygen
         ExceptionModel _model;
 
         //! ui
-        Ui_OxygenExceptionListWidget ui;
+        Ui_CarbonExceptionListWidget ui;
 
         //! changed state
         bool _changed;

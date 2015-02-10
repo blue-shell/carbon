@@ -20,13 +20,13 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygenhelper.h"
-#include "liboxygen.h"
+#include "carbonhelper.h"
+#include "libcarbon.h"
 
 #include <KColorUtils>
 #include <KColorScheme>
 
-#if OXYGEN_USE_KDE4
+#if CARBON_USE_KDE4
 #include <KGlobalSettings>
 #endif
 
@@ -36,15 +36,15 @@
 #include <QTextStream>
 #include <math.h>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <QX11Info>
 #endif
 
-#if OXYGEN_HAVE_X11 && QT_VERSION < 0x050000
+#if CARBON_HAVE_X11 && QT_VERSION < 0x050000
 #include <X11/Xlib-xcb.h>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     const qreal Helper::_slabThickness = 0.45;
@@ -57,7 +57,7 @@ namespace Oxygen
     { init(); }
 
     //____________________________________________________________________
-    #if OXYGEN_USE_KDE4
+    #if CARBON_USE_KDE4
     Helper::Helper( const QByteArray& name ):
         _componentData( name, 0, KComponentData::SkipMainComponentRegistration ),
         _config( _componentData.config() )
@@ -72,7 +72,7 @@ namespace Oxygen
     void Helper::loadConfig()
     {
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         _contrast = KGlobalSettings::contrastF( _config );
         #else
         _contrast = KColorScheme::contrastF( _config );
@@ -809,7 +809,7 @@ namespace Oxygen
     //________________________________________________________________________________________________________
     TileSet *Helper::slab( const QColor& color, const QColor& glow, qreal shade, int size )
     {
-        Oxygen::Cache<TileSet>::Value* cache( _slabCache.get( color ) );
+        Carbon::Cache<TileSet>::Value* cache( _slabCache.get( color ) );
 
         const quint64 key( ( colorKey(glow) << 32 ) | ( quint64( 256.0 * shade ) << 24 ) | size );
         TileSet *tileSet = cache->object( key );
@@ -983,7 +983,7 @@ namespace Oxygen
     void Helper::setHasBackgroundGradient( WId id, bool value ) const
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         setHasHint( id, _backgroundGradientAtom, value );
         #else
         Q_UNUSED( id );
@@ -996,7 +996,7 @@ namespace Oxygen
     bool Helper::hasBackgroundGradient( WId id ) const
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         return hasHint( id, _backgroundGradientAtom );
         #else
         Q_UNUSED( id );
@@ -1008,7 +1008,7 @@ namespace Oxygen
     void Helper::setHasBackgroundPixmap( WId id, bool value ) const
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         setHasHint( id, _backgroundPixmapAtom, value );
         #else
         Q_UNUSED( id );
@@ -1021,7 +1021,7 @@ namespace Oxygen
     bool Helper::hasBackgroundPixmap( WId id ) const
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         return hasHint( id, _backgroundPixmapAtom );
         #else
         Q_UNUSED( id );
@@ -1056,7 +1056,7 @@ namespace Oxygen
     //______________________________________________________________________________
     bool Helper::isX11( void )
     {
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         #if QT_VERSION >= 0x050000
         return QX11Info::isPlatformX11();
         #else
@@ -1068,7 +1068,7 @@ namespace Oxygen
 
     }
 
-    #if OXYGEN_HAVE_X11
+    #if CARBON_HAVE_X11
 
     //____________________________________________________________________
     xcb_connection_t* Helper::connection( void )
@@ -1209,7 +1209,7 @@ namespace Oxygen
 
     }
 
-    #if OXYGEN_HAVE_X11
+    #if CARBON_HAVE_X11
 
     //____________________________________________________________________
     void Helper::setHasHint( xcb_window_t id, xcb_atom_t atom, bool value ) const
@@ -1248,7 +1248,7 @@ namespace Oxygen
     void Helper::init( void )
     {
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         _contrast = KGlobalSettings::contrastF( _config );
         #else
         _contrast = KColorScheme::contrastF( _config );
@@ -1260,12 +1260,12 @@ namespace Oxygen
 
         _backgroundCache.setMaxCost( 64 );
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         if( isX11() )
         {
 
-            _backgroundGradientAtom = createAtom( QStringLiteral( "_KDE_OXYGEN_BACKGROUND_GRADIENT" ) );
-            _backgroundPixmapAtom = createAtom( QStringLiteral( "_KDE_OXYGEN_BACKGROUND_PIXMAP" ) );
+            _backgroundGradientAtom = createAtom( QStringLiteral( "_KDE_CARBON_BACKGROUND_GRADIENT" ) );
+            _backgroundPixmapAtom = createAtom( QStringLiteral( "_KDE_CARBON_BACKGROUND_PIXMAP" ) );
 
         } else {
 

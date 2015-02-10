@@ -1,8 +1,8 @@
-#ifndef oxygenframeshadow_h
-#define oxygenframeshadow_h
+#ifndef carbonframeshadow_h
+#define carbonframeshadow_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenframeshadow.h
+// carbonframeshadow.h
 // handle frames' shadows and rounded corners
 // -------------------
 //
@@ -30,8 +30,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenaddeventfilter.h"
-#include "oxygenstylehelper.h"
+#include "carbonaddeventfilter.h"
+#include "carbonstylehelper.h"
 
 #include <QEvent>
 #include <QObject>
@@ -41,7 +41,7 @@
 #include <QPaintEvent>
 #include <KColorScheme>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* shadow manager

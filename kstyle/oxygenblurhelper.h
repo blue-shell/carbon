@@ -1,8 +1,8 @@
-#ifndef oxygenblurhelper_h
-#define oxygenblurhelper_h
+#ifndef carbonblurhelper_h
+#define carbonblurhelper_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenblurhelper.h
+// carbonblurhelper.h
 // handle regions passed to kwin for blurring
 // -------------------
 //
@@ -30,8 +30,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenstylehelper.h"
-#include "oxygen.h"
+#include "carbonstylehelper.h"
+#include "carbon.h"
 
 #include <QBasicTimer>
 #include <QHash>
@@ -44,11 +44,11 @@
 #include <QRegion>
 #include <QToolBar>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <xcb/xcb.h>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
     class BlurHelper: public QObject
     {
@@ -159,7 +159,7 @@ namespace Oxygen
         //! delayed update timer
         QBasicTimer _timer;
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         //! blur atom
         xcb_atom_t _blurAtom;
         xcb_atom_t _opaqueAtom;

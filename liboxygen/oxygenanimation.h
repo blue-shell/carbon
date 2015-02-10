@@ -1,7 +1,7 @@
-#ifndef oxygenanimation_h
-#define oxygenanimation_h
+#ifndef carbonanimation_h
+#define carbonanimation_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimation.h
+// carbonanimation.h
 // stores event filters and maps widgets to animations for animations
 // -------------------
 //
@@ -30,12 +30,12 @@
 #include <QPropertyAnimation>
 #include <QVariant>
 
-#include "oxygen_export.h"
+#include "carbon_export.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class OXYGEN_EXPORT Animation: public QPropertyAnimation
+    class CARBON_EXPORT Animation: public QPropertyAnimation
     {
 
         Q_OBJECT

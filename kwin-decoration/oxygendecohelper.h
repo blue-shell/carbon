@@ -1,5 +1,5 @@
-#ifndef oxygendecohelper_h
-#define oxygendecohelper_h
+#ifndef carbondecohelper_h
+#define carbondecohelper_h
 
 /*
  * Copyright 2013 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -22,12 +22,12 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygenhelper.h"
+#include "carbonhelper.h"
 #include <ksharedconfig.h>
 
 //! helper class
-/*! contains utility functions used at multiple places in oxygen style */
-namespace Oxygen
+/*! contains utility functions used at multiple places in carbon style */
+namespace Carbon
 {
 
     class DecoHelper : public Helper
@@ -80,4 +80,4 @@ namespace Oxygen
 
 }
 
-#endif // __OXYGEN_STYLE_HELPER_H
+#endif // __CARBON_STYLE_HELPER_H

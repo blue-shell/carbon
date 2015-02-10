@@ -18,22 +18,22 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  *************************************************************************/
 
-#include "oxygenstyleplugin.h"
-#include "oxygenstyle.h"
+#include "carbonstyleplugin.h"
+#include "carbonstyle.h"
 
 #include <QApplication>
 
 #if QT_VERSION < 0x050000
-Q_EXPORT_PLUGIN2( oxygen-qt, Oxygen::StylePlugin )
+Q_EXPORT_PLUGIN2( carbon-qt, Carbon::StylePlugin )
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_________________________________________________
     QStyle* StylePlugin::create( const QString &key )
     {
-        if( key.toLower() == QStringLiteral( "oxygen" ) )
+        if( key.toLower() == QStringLiteral( "carbon" ) )
         {
             QStyle* style = new Style();
             #if QT_VERSION >= 0x050000
@@ -55,6 +55,6 @@ namespace Oxygen
 
     //_________________________________________________
     QStringList StylePlugin::keys() const
-    { return QStringList( QStringLiteral( "Oxygen" ) ); }
+    { return QStringList( QStringLiteral( "Carbon" ) ); }
 
 }

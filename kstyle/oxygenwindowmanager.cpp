@@ -18,7 +18,7 @@
  *************************************************************************/
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenwindowmanager.cpp
+// carbonwindowmanager.cpp
 // pass some window mouse press/release/move event actions to window manager
 // -------------------
 //
@@ -46,10 +46,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenwindowmanager.h"
-#include "oxygenpropertynames.h"
-#include "oxygenstyleconfigdata.h"
-#include "oxygenhelper.h"
+#include "carbonwindowmanager.h"
+#include "carbonpropertynames.h"
+#include "carbonstyleconfigdata.h"
+#include "carbonhelper.h"
 
 #include <QApplication>
 #include <QComboBox>
@@ -76,11 +76,11 @@
 
 #include <QTextStream>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <QX11Info>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* provide application-wise event filter
@@ -189,7 +189,7 @@ namespace Oxygen
         _appEventFilter = new AppEventFilter( this );
         qApp->installEventFilter( _appEventFilter );
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         _moveResizeAtom = 0;
         if( Helper::isX11() )
         {
@@ -733,7 +733,7 @@ namespace Oxygen
         if( useWMMoveResize() )
         {
 
-            #if OXYGEN_HAVE_X11
+            #if CARBON_HAVE_X11
             // connection
             xcb_connection_t* connection( Helper::connection() );
 
@@ -801,7 +801,7 @@ namespace Oxygen
     bool WindowManager::supportWMMoveResize( void ) const
     {
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         return Helper::isX11();
         #else
         return false;

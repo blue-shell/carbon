@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentoolbardata.cpp
+// carbontoolbardata.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentoolbardata.h"
+#include "carbontoolbardata.h"
 
 #include <QToolButton>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________________________________

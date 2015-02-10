@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygeninputdemowidget.cpp
-// oxygen input widgets (e.g. text editors) demo widget
+// carboninputdemowidget.cpp
+// carbon input widgets (e.g. text editors) demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygeninputdemowidget.h"
+#include "carboninputdemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________________________

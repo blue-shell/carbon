@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenframeshadow.h
+// carbonframeshadow.h
 // handle sunken frames' shadows
 // -------------------
 //
@@ -27,7 +27,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenframeshadow.h"
+#include "carbonframeshadow.h"
 
 #include <QDebug>
 #include <QAbstractScrollArea>
@@ -39,7 +39,7 @@
 
 #include <KColorUtils>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________________________________

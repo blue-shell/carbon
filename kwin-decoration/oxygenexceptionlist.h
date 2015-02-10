@@ -1,8 +1,8 @@
-#ifndef oxygenexceptionlist_h
-#define oxygenexceptionlist_h
+#ifndef carbonexceptionlist_h
+#define carbonexceptionlist_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptionlist.h
+// carbonexceptionlist.h
 // window decoration exceptions
 // -------------------
 //
@@ -27,15 +27,15 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfiguration.h"
-#include "oxygendecorationdefines.h"
+#include "carbonconfiguration.h"
+#include "carbondecorationdefines.h"
 
 #include <KSharedConfig>
 
-namespace Oxygen
+namespace Carbon
 {
 
-    //! oxygen exceptions list
+    //! carbon exceptions list
     class ExceptionList
     {
 

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygensplitterengine.h
+// carbonsplitterengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -25,9 +25,9 @@
 //////////////////////////////////////////////////////////////////////////////
 
 
-#include "oxygensplitterengine.h"
+#include "carbonsplitterengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

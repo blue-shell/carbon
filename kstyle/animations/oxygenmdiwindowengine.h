@@ -1,8 +1,8 @@
-#ifndef oxygenmdiwindowengine_h
-#define oxygenmdiwindowengine_h
+#ifndef carbonmdiwindowengine_h
+#define carbonmdiwindowengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdiwindowengine.h
+// carbonmdiwindowengine.h
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenmdiwindowdata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonmdiwindowdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! handle mdiwindow arrows hover effect

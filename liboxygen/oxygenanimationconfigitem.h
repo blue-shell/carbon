@@ -1,8 +1,8 @@
-#ifndef oxygenanimationconfigitem_h
-#define oxygenanimationconfigitem_h
+#ifndef carbonanimationconfigitem_h
+#define carbonanimationconfigitem_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigitem.h
+// carbonanimationconfigitem.h
 // animation configuration item
 // -------------------
 //
@@ -27,17 +27,17 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen_config_export.h"
+#include "carbon_config_export.h"
 
 #include <QAbstractButton>
 #include <QWidget>
 
 class Ui_AnimationConfigItem;
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class OXYGEN_CONFIG_EXPORT AnimationConfigItem: public QWidget
+    class CARBON_CONFIG_EXPORT AnimationConfigItem: public QWidget
     {
 
         Q_OBJECT

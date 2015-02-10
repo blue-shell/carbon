@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlabelengine.cpp
+// carbonlabelengine.cpp
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenlabelengine.h"
+#include "carbonlabelengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

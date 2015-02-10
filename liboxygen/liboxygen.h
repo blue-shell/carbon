@@ -1,5 +1,5 @@
-#ifndef liboxygen_h
-#define liboxygen_h
+#ifndef libcarbon_h
+#define libcarbon_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -22,7 +22,7 @@
 
 #include <QFlags>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* disable QStringLiteral for older Qt version
@@ -47,6 +47,6 @@ namespace Oxygen
     Q_DECLARE_FLAGS( Corners, Corner );
 }
 
-Q_DECLARE_OPERATORS_FOR_FLAGS( Oxygen::Corners );
+Q_DECLARE_OPERATORS_FOR_FLAGS( Carbon::Corners );
 
 #endif

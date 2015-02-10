@@ -1,5 +1,5 @@
-#ifndef oxygen_config_h
-#define oxygen_config_h
+#ifndef carbon_config_h
+#define carbon_config_h
 
 //////////////////////////////////////////////////////////////////////////////
 // config.h
@@ -30,18 +30,18 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfigwidget.h"
-#include "oxygenconfiguration.h"
-#include "../oxygendecorationdefines.h"
+#include "carbonconfigwidget.h"
+#include "carbonconfiguration.h"
+#include "../carbondecorationdefines.h"
 
 #include <KSharedConfig>
 #include <QPalette>
 
-namespace Oxygen {
+namespace Carbon {
 
     class Configuration;
 
-    // oxygen configuration object
+    // carbon configuration object
     class Config: public QObject
     {
 
@@ -107,6 +107,6 @@ namespace Oxygen {
 
     };
 
-} //namespace Oxygen
+} //namespace Carbon
 
 #endif

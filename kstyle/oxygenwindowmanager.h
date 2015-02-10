@@ -1,5 +1,5 @@
-#ifndef oxygenwindowmanager_h
-#define oxygenwindowmanager_h
+#ifndef carbonwindowmanager_h
+#define carbonwindowmanager_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -20,8 +20,8 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  *************************************************************************/
 
-#include "oxygen.h"
-#include "config-liboxygen.h"
+#include "carbon.h"
+#include "config-libcarbon.h"
 
 #include <QEvent>
 
@@ -31,11 +31,11 @@
 #include <QString>
 #include <QWidget>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <xcb/xcb.h>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     class WindowManager: public QObject
@@ -260,7 +260,7 @@ namespace Oxygen
         //* application event filter
         QObject* _appEventFilter;
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         xcb_atom_t _moveResizeAtom;
         #endif
 

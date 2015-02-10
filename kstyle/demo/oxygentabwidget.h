@@ -1,8 +1,8 @@
-#ifndef oxygentabwidget_h
-#define oxygentabwidget_h
+#ifndef carbontabwidget_h
+#define carbontabwidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentabwidget.h
+// carbontabwidget.h
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -26,13 +26,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "../oxygen.h"
+#include "../carbon.h"
 
 #include <QTabWidget>
 #include <QTabBar>
 #include <QIcon>
 
-namespace Oxygen
+namespace Carbon
 {
     class TabWidget: public QTabWidget
     {

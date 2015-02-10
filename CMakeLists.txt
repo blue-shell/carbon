@@ -1,4 +1,4 @@
-project(oxygen)
+project(carbon)
 set(PROJECT_VERSION "5.2.90")
 set(PROJECT_VERSION_MAJOR 5)
 cmake_minimum_required(VERSION 2.8.12 FATAL_ERROR)
@@ -7,8 +7,8 @@ include(GenerateExportHeader)
 include(WriteBasicConfigVersionFile)
 include(FeatureSummary)
 
-set(OXYGEN_USE_KDE4 ${USE_KDE4})
-if(OXYGEN_USE_KDE4)
+set(CARBON_USE_KDE4 ${USE_KDE4})
+if(CARBON_USE_KDE4)
 
   ############ Language and toolchain features
   ############ copied from ECM
@@ -21,7 +21,7 @@ if(OXYGEN_USE_KDE4)
 endif()
 
 ################# Qt/KDE #################
-if(OXYGEN_USE_KDE4)
+if(CARBON_USE_KDE4)
 
   find_package(KDE4 REQUIRED)
   include(KDE4Defaults)
@@ -35,15 +35,15 @@ if(OXYGEN_USE_KDE4)
   set_package_properties(
     KDE4Workspace PROPERTIES
     TYPE OPTIONAL
-    PURPOSE "Required to oxygen window decoration for kwin"
+    PURPOSE "Required to carbon window decoration for kwin"
  )
 
   ### XCB
   find_package(PkgConfig)
   pkg_check_modules(XCB xcb x11-xcb)
-  set(OXYGEN_HAVE_X11 ${XCB_FOUND})
+  set(CARBON_HAVE_X11 ${XCB_FOUND})
 
-  add_subdirectory(liboxygen)
+  add_subdirectory(libcarbon)
   add_subdirectory(kstyle)
   if(KDE4Workspace_FOUND)
      add_subdirectory(kwin-decoration)
@@ -75,7 +75,7 @@ else()
 
   if(NOT APPLE)
 
-    set(OXYGEN_HAVE_X11 ${XCB_XCB_FOUND})
+    set(CARBON_HAVE_X11 ${XCB_XCB_FOUND})
     if (XCB_XCB_FOUND)
       find_package(Qt5 REQUIRED CONFIG COMPONENTS X11Extras)
     endif()
@@ -86,13 +86,13 @@ else()
   include(KDECMakeSettings)
   include(KDECompilerSettings)
 
-  add_subdirectory(liboxygen)
+  add_subdirectory(libcarbon)
   add_subdirectory(kstyle)
   add_subdirectory(cursors)
 
   add_subdirectory(sounds)
 
-  install(DIRECTORY lookandfeel/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/look-and-feel/org.kde.oxygen
+  install(DIRECTORY lookandfeel/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/look-and-feel/org.kde.carbon
           PATTERN "Messages.sh" EXCLUDE PATTERN "CMakeLists.txt" EXCLUDE)
 
   # po/ dir added by packaging scripts

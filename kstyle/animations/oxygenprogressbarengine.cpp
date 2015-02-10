@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenprogressbarengine.cpp
+// carbonprogressbarengine.cpp
 // handle progress bar animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenprogressbarengine.h"
+#include "carbonprogressbarengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

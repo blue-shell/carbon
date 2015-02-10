@@ -27,13 +27,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfig.h"
+#include "carbonconfig.h"
 
-#include "oxygenanimationconfigwidget.h"
-#include "oxygenconfiguration.h"
-#include "oxygenutil.h"
-#include "../oxygenexceptionlist.h"
-#include "config-liboxygen.h"
+#include "carbonanimationconfigwidget.h"
+#include "carbonconfiguration.h"
+#include "carbonutil.h"
+#include "../carbonexceptionlist.h"
+#include "config-libcarbon.h"
 
 #include <QTextStream>
 #include <QDBusConnection>
@@ -47,28 +47,28 @@
 //* plugin definition
 /**
  * this is the old style/KDE4 plugin declaration.
- * it is used in oxygen-settings for both KDE4 and KF5
+ * it is used in carbon-settings for both KDE4 and KF5
  */
 extern "C"
 {
     Q_DECL_EXPORT QObject* allocate_config( KConfig*, QWidget* parent )
-    { return ( new Oxygen::Config( parent ) ); }
+    { return ( new Carbon::Config( parent ) ); }
 }
 
-#if !OXYGEN_USE_KDE4
+#if !CARBON_USE_KDE4
 /** this is the new style/KF5 plugin declaration, used internally by KWin */
 K_PLUGIN_FACTORY_WITH_JSON(
-    OxygenConfigPlugin,
+    CarbonConfigPlugin,
     "config.json",
-    registerPlugin<Oxygen::Config>(QString(), &Oxygen::Config::create); )
+    registerPlugin<Carbon::Config>(QString(), &Carbon::Config::create); )
 #endif
 
-#include "oxygenconfig.moc"
+#include "carbonconfig.moc"
 
-namespace Oxygen
+namespace Carbon
 {
 
-    #if !OXYGEN_USE_KDE4
+    #if !CARBON_USE_KDE4
     // create new configuration
     QObject *Config::create(QWidget *parentWidget, QObject *, const QList<QVariant> &)
     { return new Config(parentWidget); }
@@ -79,13 +79,13 @@ namespace Oxygen
         QObject( parent )
     {
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         // catalog
         KGlobal::locale()->insertCatalog("kwin_clients");
         #endif
 
         // configuration
-        _configuration = KSharedConfig::openConfig( QStringLiteral( "oxygenrc" ) );
+        _configuration = KSharedConfig::openConfig( QStringLiteral( "carbonrc" ) );
 
         // create new configuration widget and add to layout, if any
         _configWidget = new ConfigWidget( parent );
@@ -111,7 +111,7 @@ namespace Oxygen
         // load standard configuration
         ConfigurationPtr configuration( new Configuration() );
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         configuration->readConfig();
         #else
         configuration->load();
@@ -135,7 +135,7 @@ namespace Oxygen
     {
 
         ConfigurationPtr configuration( new Configuration() );
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         configuration->readConfig();
         #else
         configuration->load();
@@ -158,7 +158,7 @@ namespace Oxygen
 
         // create configuration from group
         ConfigurationPtr configuration( new Configuration() );
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         configuration->readConfig();
         #else
         configuration->load();
@@ -182,7 +182,7 @@ namespace Oxygen
         // sync configuration
         _configuration->sync();
 
-        QDBusMessage message( QDBusMessage::createSignal( QStringLiteral( "/OxygenWindeco" ),  QStringLiteral( "org.kde.Oxygen.Style" ), QStringLiteral( "reparseConfiguration") ) );
+        QDBusMessage message( QDBusMessage::createSignal( QStringLiteral( "/CarbonWindeco" ),  QStringLiteral( "org.kde.Carbon.Style" ), QStringLiteral( "reparseConfiguration") ) );
         QDBusConnection::sessionBus().send(message);
 
     }

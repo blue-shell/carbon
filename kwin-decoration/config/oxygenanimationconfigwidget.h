@@ -1,8 +1,8 @@
-#ifndef oxygenanimationconfigwidget_h
-#define oxygenanimationconfigwidget_h
+#ifndef carbonanimationconfigwidget_h
+#define carbonanimationconfigwidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigwidget.h
+// carbonanimationconfigwidget.h
 // animation configuration item
 // -------------------
 //
@@ -27,10 +27,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "../oxygendecorationdefines.h"
-#include "oxygenbaseanimationconfigwidget.h"
+#include "../carbondecorationdefines.h"
+#include "carbonbaseanimationconfigwidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     // forward declaration

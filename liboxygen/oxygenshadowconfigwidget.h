@@ -29,16 +29,16 @@
 #include <QCheckBox>
 #include <QGroupBox>
 
-#include "oxygen_config_export.h"
+#include "carbon_config_export.h"
 
 // forward declaration
 class Ui_ShadowConfiguraionUI;
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! shadow configuration widget
-    class OXYGEN_CONFIG_EXPORT ShadowConfigWidget: public QGroupBox
+    class CARBON_CONFIG_EXPORT ShadowConfigWidget: public QGroupBox
     {
 
         Q_OBJECT

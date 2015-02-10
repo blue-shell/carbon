@@ -1,8 +1,8 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenstyle.cpp
-// Oxygen widget style for KDE 4
+// carbonstyle.cpp
+// Carbon widget style for KDE 4
 // -------------------
 //
 // Copyright ( C ) 2009-2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -46,21 +46,21 @@
 // Boston, MA 02110-1301, USA.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenstyle.h"
+#include "carbonstyle.h"
 
-#include "oxygen.h"
-#include "oxygenanimations.h"
-#include "oxygenblurhelper.h"
-#include "oxygenframeshadow.h"
-#include "oxygenmdiwindowshadow.h"
-#include "oxygenmnemonics.h"
-#include "oxygenpropertynames.h"
-#include "oxygenshadowhelper.h"
-#include "oxygensplitterproxy.h"
-#include "oxygenstyleconfigdata.h"
-#include "oxygentransitions.h"
-#include "oxygenwidgetexplorer.h"
-#include "oxygenwindowmanager.h"
+#include "carbon.h"
+#include "carbonanimations.h"
+#include "carbonblurhelper.h"
+#include "carbonframeshadow.h"
+#include "carbonmdiwindowshadow.h"
+#include "carbonmnemonics.h"
+#include "carbonpropertynames.h"
+#include "carbonshadowhelper.h"
+#include "carbonsplitterproxy.h"
+#include "carbonstyleconfigdata.h"
+#include "carbontransitions.h"
+#include "carbonwidgetexplorer.h"
+#include "carbonwindowmanager.h"
 
 #include <QAbstractButton>
 #include <QAbstractItemView>
@@ -96,7 +96,7 @@
 
 #include <cmath>
 
-namespace OxygenPrivate
+namespace CarbonPrivate
 {
 
     /*!
@@ -110,7 +110,7 @@ namespace OxygenPrivate
         public:
 
         //! constructor
-        explicit TabBarData( Oxygen::Style* parent ):
+        explicit TabBarData( Carbon::Style* parent ):
             QObject( parent ),
             _style( parent ),
             _dirty( false )
@@ -142,10 +142,10 @@ namespace OxygenPrivate
         private:
 
         //! pointer to parent style object
-        Oxygen::WeakPointer<const Oxygen::Style> _style;
+        Carbon::WeakPointer<const Carbon::Style> _style;
 
         //! pointer to target tabBar
-        Oxygen::WeakPointer<const QWidget> _tabBar;
+        Carbon::WeakPointer<const QWidget> _tabBar;
 
         //! if true, will paint on next TabBarTabShapeControl call
         bool _dirty;
@@ -162,7 +162,7 @@ namespace OxygenPrivate
         ComboBoxItemDelegate( QAbstractItemView* parent ):
             QItemDelegate( parent ),
             _proxy( parent->itemDelegate() ),
-            _itemMargin( Oxygen::Metrics::ItemView_ItemMarginWidth )
+            _itemMargin( Carbon::Metrics::ItemView_ItemMarginWidth )
         {}
 
         //! destructor
@@ -195,7 +195,7 @@ namespace OxygenPrivate
         private:
 
         //! proxy
-        Oxygen::WeakPointer<QAbstractItemDelegate> _proxy;
+        Carbon::WeakPointer<QAbstractItemDelegate> _proxy;
 
         //! margin
         int _itemMargin;
@@ -204,7 +204,7 @@ namespace OxygenPrivate
 
 }
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! toplevel manager
@@ -242,8 +242,8 @@ namespace Oxygen
 
     //______________________________________________________________
     Style::Style( void ):
-        #if OXYGEN_USE_KDE4
-        _helper( new StyleHelper( "oxygen" ) )
+        #if CARBON_USE_KDE4
+        _helper( new StyleHelper( "carbon" ) )
         #else
         _helper( new StyleHelper( StyleConfigData::self()->sharedConfig() ) )
         #endif
@@ -257,19 +257,19 @@ namespace Oxygen
         ,_mnemonics( new Mnemonics( this ) )
         ,_blurHelper( new BlurHelper( this, *_helper ) )
         ,_widgetExplorer( new WidgetExplorer( this ) )
-        ,_tabBarData( new OxygenPrivate::TabBarData( this ) )
+        ,_tabBarData( new CarbonPrivate::TabBarData( this ) )
         ,_splitterFactory( new SplitterFactory( this ) )
-        #if !OXYGEN_USE_KDE4
+        #if !CARBON_USE_KDE4
         ,SH_ArgbDndWindow( newStyleHint( QStringLiteral( "SH_ArgbDndWindow" ) ) )
         ,CE_CapacityBar( newControlElement( QStringLiteral( "CE_CapacityBar" ) ) )
         #endif
     {
 
-        // use DBus connection to update on oxygen configuration change
+        // use DBus connection to update on carbon configuration change
         QDBusConnection dbus = QDBusConnection::sessionBus();
         dbus.connect( QString(),
-            QStringLiteral( "/OxygenStyle" ),
-            QStringLiteral( "org.kde.Oxygen.Style" ),
+            QStringLiteral( "/CarbonStyle" ),
+            QStringLiteral( "org.kde.Carbon.Style" ),
             QStringLiteral( "reparseConfiguration" ), this, SLOT(configurationChanged()) );
 
         // call the slot directly; this initial call will set up things that also
@@ -501,7 +501,7 @@ namespace Oxygen
             {
                 QAbstractItemView *itemView( comboBox->view() );
                 if( itemView && itemView->itemDelegate() && itemView->itemDelegate()->inherits( "QComboBoxDelegate" ) )
-                { itemView->setItemDelegate( new OxygenPrivate::ComboBoxItemDelegate( itemView ) ); }
+                { itemView->setItemDelegate( new CarbonPrivate::ComboBoxItemDelegate( itemView ) ); }
             }
 
         } else if( widget->inherits( "QComboBoxPrivateContainer" ) ) {
@@ -1072,7 +1072,7 @@ namespace Oxygen
     {
 
         StyleControl fcn( nullptr );
-        #if !OXYGEN_USE_KDE4
+        #if !CARBON_USE_KDE4
         if( element == CE_CapacityBar )
         {
 
@@ -1489,7 +1489,7 @@ namespace Oxygen
     {
 
         // reload
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         StyleConfigData::self()->readConfig();
         #else
         StyleConfigData::self()->load();
@@ -3270,7 +3270,7 @@ namespace Oxygen
             _helper->renderWindowBackground( painter, option->rect, widget, option->palette );
             _helper->drawFloatFrame( painter, option->rect, option->palette.window().color(), true );
 
-        #if !OXYGEN_USE_KDE4
+        #if !CARBON_USE_KDE4
         } else if( option->styleObject && option->styleObject->inherits( "QQuickItem" ) ) {
 
             // QtQuick Control case
@@ -8552,7 +8552,7 @@ namespace Oxygen
 
 }
 
-namespace OxygenPrivate
+namespace CarbonPrivate
 {
 
     //_________________________________________________________________________________________________________
@@ -8585,7 +8585,7 @@ namespace OxygenPrivate
         const QRect tabBarRect( tabBar->rect() );
 
         // define slab
-        Oxygen::Style::SlabRect slab;
+        Carbon::Style::SlabRect slab;
 
         // switch on tab shape
         switch( tabOption->shape )
@@ -8593,60 +8593,60 @@ namespace OxygenPrivate
             case QTabBar::RoundedNorth:
             case QTabBar::TriangularNorth:
             {
-                Oxygen::TileSet::Tiles tiles( Oxygen::TileSet::Top );
+                Carbon::TileSet::Tiles tiles( Carbon::TileSet::Top );
                 QRect frameRect;
-                frameRect.setLeft( tabBarRect.left() - Oxygen::TileSet::DefaultSize );
-                frameRect.setRight( tabBarRect.right() + Oxygen::TileSet::DefaultSize );
-                frameRect.setTop( tabBarRect.bottom() - Oxygen::TileSet::DefaultSize + 1 );
+                frameRect.setLeft( tabBarRect.left() - Carbon::TileSet::DefaultSize );
+                frameRect.setRight( tabBarRect.right() + Carbon::TileSet::DefaultSize );
+                frameRect.setTop( tabBarRect.bottom() - Carbon::TileSet::DefaultSize + 1 );
                 frameRect.setHeight( 4 );
-                if( !( documentMode || reverseLayout ) ) tiles |= Oxygen::TileSet::Left;
-                if( !documentMode && reverseLayout ) tiles |= Oxygen::TileSet::Right;
-                slab = Oxygen::Style::SlabRect( frameRect, tiles );
+                if( !( documentMode || reverseLayout ) ) tiles |= Carbon::TileSet::Left;
+                if( !documentMode && reverseLayout ) tiles |= Carbon::TileSet::Right;
+                slab = Carbon::Style::SlabRect( frameRect, tiles );
                 break;
             }
 
             case QTabBar::RoundedSouth:
             case QTabBar::TriangularSouth:
             {
-                Oxygen::TileSet::Tiles tiles( Oxygen::TileSet::Bottom );
+                Carbon::TileSet::Tiles tiles( Carbon::TileSet::Bottom );
                 QRect frameRect;
-                frameRect.setLeft( tabBarRect.left() - Oxygen::TileSet::DefaultSize );
-                frameRect.setRight( tabBarRect.right() + Oxygen::TileSet::DefaultSize );
-                frameRect.setBottom( tabBarRect.top() + Oxygen::TileSet::DefaultSize - 1 );
+                frameRect.setLeft( tabBarRect.left() - Carbon::TileSet::DefaultSize );
+                frameRect.setRight( tabBarRect.right() + Carbon::TileSet::DefaultSize );
+                frameRect.setBottom( tabBarRect.top() + Carbon::TileSet::DefaultSize - 1 );
                 frameRect.setTop( frameRect.bottom() - 4 );
-                if( !( documentMode || reverseLayout ) ) tiles |= Oxygen::TileSet::Left;
-                if( !documentMode && reverseLayout ) tiles |= Oxygen::TileSet::Right;
-                slab = Oxygen::Style::SlabRect( frameRect, tiles );
+                if( !( documentMode || reverseLayout ) ) tiles |= Carbon::TileSet::Left;
+                if( !documentMode && reverseLayout ) tiles |= Carbon::TileSet::Right;
+                slab = Carbon::Style::SlabRect( frameRect, tiles );
                 break;
             }
 
             case QTabBar::RoundedWest:
             case QTabBar::TriangularWest:
             {
-                Oxygen::TileSet::Tiles tiles( Oxygen::TileSet::Left );
+                Carbon::TileSet::Tiles tiles( Carbon::TileSet::Left );
                 QRect frameRect;
-                frameRect.setTop( tabBarRect.top() - Oxygen::TileSet::DefaultSize );
-                frameRect.setBottom( tabBarRect.bottom() + Oxygen::TileSet::DefaultSize );
-                frameRect.setLeft( tabBarRect.right() - Oxygen::TileSet::DefaultSize + 1 );
+                frameRect.setTop( tabBarRect.top() - Carbon::TileSet::DefaultSize );
+                frameRect.setBottom( tabBarRect.bottom() + Carbon::TileSet::DefaultSize );
+                frameRect.setLeft( tabBarRect.right() - Carbon::TileSet::DefaultSize + 1 );
                 frameRect.setWidth( 4 );
-                if( !( documentMode || reverseLayout ) ) tiles |= Oxygen::TileSet::Top;
-                if( !documentMode && reverseLayout ) tiles |= Oxygen::TileSet::Bottom;
-                slab = Oxygen::Style::SlabRect( frameRect, tiles );
+                if( !( documentMode || reverseLayout ) ) tiles |= Carbon::TileSet::Top;
+                if( !documentMode && reverseLayout ) tiles |= Carbon::TileSet::Bottom;
+                slab = Carbon::Style::SlabRect( frameRect, tiles );
                 break;
             }
 
             case QTabBar::RoundedEast:
             case QTabBar::TriangularEast:
             {
-                Oxygen::TileSet::Tiles tiles( Oxygen::TileSet::Right );
+                Carbon::TileSet::Tiles tiles( Carbon::TileSet::Right );
                 QRect frameRect;
-                frameRect.setTop( tabBarRect.top() - Oxygen::TileSet::DefaultSize );
-                frameRect.setBottom( tabBarRect.bottom() + Oxygen::TileSet::DefaultSize );
-                frameRect.setRight( tabBarRect.left() + Oxygen::TileSet::DefaultSize - 1 );
+                frameRect.setTop( tabBarRect.top() - Carbon::TileSet::DefaultSize );
+                frameRect.setBottom( tabBarRect.bottom() + Carbon::TileSet::DefaultSize );
+                frameRect.setRight( tabBarRect.left() + Carbon::TileSet::DefaultSize - 1 );
                 frameRect.setLeft( frameRect.right() - 4 );
-                if( !( documentMode || reverseLayout ) ) tiles |= Oxygen::TileSet::Top;
-                if( !documentMode && reverseLayout ) tiles |= Oxygen::TileSet::Bottom;
-                slab = Oxygen::Style::SlabRect( frameRect, tiles );
+                if( !( documentMode || reverseLayout ) ) tiles |= Carbon::TileSet::Top;
+                if( !documentMode && reverseLayout ) tiles |= Carbon::TileSet::Bottom;
+                slab = Carbon::Style::SlabRect( frameRect, tiles );
                 break;
             }
 
@@ -8660,7 +8660,7 @@ namespace OxygenPrivate
         const QPalette& palette( tabOption->palette );
         const QColor color( palette.color( QPalette::Window ) );
         _style.data()->adjustSlabRect( slab, tabWidgetRect, documentMode, verticalTabs );
-        _style.data()->renderSlab( painter, slab, color, Oxygen::NoFill );
+        _style.data()->renderSlab( painter, slab, color, Carbon::NoFill );
 
         setDirty( false );
         return;

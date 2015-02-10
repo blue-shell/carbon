@@ -1,7 +1,7 @@
-#ifndef oxygenexceptionmodel_h
-#define oxygenexceptionmodel_h
+#ifndef carbonexceptionmodel_h
+#define carbonexceptionmodel_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptionmodel.h
+// carbonexceptionmodel.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -25,11 +25,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenlistmodel.h"
-#include "oxygenconfiguration.h"
-#include "../oxygendecorationdefines.h"
+#include "carbonlistmodel.h"
+#include "carbonconfiguration.h"
+#include "../carbondecorationdefines.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! qlistview for object counters

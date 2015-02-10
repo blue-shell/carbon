@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenscrollbardata.cpp
+// carbonscrollbardata.cpp
 // data container for QTabBar animations
 // -------------------
 //
@@ -24,7 +24,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenscrollbardata.h"
+#include "carbonscrollbardata.h"
 
 #include <QHoverEvent>
 #include <QScrollBar>
@@ -32,7 +32,7 @@
 
 Q_GUI_EXPORT QStyleOptionSlider qt_qscrollbarStyleOption(QScrollBar*);
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

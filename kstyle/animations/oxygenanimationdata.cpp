@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationdata.cpp
+// carbonanimationdata.cpp
 // base class data container needed for widget animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
+#include "carbonanimationdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     const qreal AnimationData::OpacityInvalid = -1;

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbusyindicatorengine.cpp
+// carbonbusyindicatorengine.cpp
 // handle progress bar busy indicator
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbusyindicatorengine.h"
+#include "carbonbusyindicatorengine.h"
 
 #include <QVariant>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

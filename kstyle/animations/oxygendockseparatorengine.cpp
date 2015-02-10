@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygendockseparatorengine.cpp
+// carbondockseparatorengine.cpp
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendockseparatorengine.h"
+#include "carbondockseparatorengine.h"
 
 #include <QEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

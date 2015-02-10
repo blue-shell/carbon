@@ -1,5 +1,5 @@
-#ifndef oxygentabbarengine_h
-#define oxygentabbarengine_h
+#ifndef carbontabbarengine_h
+#define carbontabbarengine_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -20,12 +20,12 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  *************************************************************************/
 
-#include "oxygen.h"
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygentabbardata.h"
+#include "carbon.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbontabbardata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* stores tabbar hovered action and timeLine

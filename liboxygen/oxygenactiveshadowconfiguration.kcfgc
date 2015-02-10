@@ -1,6 +1,6 @@
-File=oxygenactiveshadowconfigdata.kcfgc
+File=carbonactiveshadowconfigdata.kcfgc
 ClassName=ActiveShadowConfiguration
-NameSpace=Oxygen
+NameSpace=Carbon
 Singleton=true
 Mutators=true
 GlobalEnums=true

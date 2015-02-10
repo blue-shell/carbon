@@ -1,6 +1,6 @@
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendetectwidget.cpp
+// carbondetectwidget.cpp
 // Note: this class is a stripped down version of
 // /kdebase/workspace/kwin/kcmkwin/kwinrules/detectwidget.cpp
 // Copyright (c) 2004 Lubos Lunak <l.lunak@kde.org>
@@ -27,10 +27,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendetectwidget.h"
+#include "carbondetectwidget.h"
 
-#include "../oxygendecorationdefines.h"
-#include "config-liboxygen.h"
+#include "../carbondecorationdefines.h"
+#include "config-libcarbon.h"
 
 #include <QButtonGroup>
 #include <QLayout>
@@ -45,7 +45,7 @@
 #include <X11/Xlib-xcb.h>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_________________________________________________________
@@ -87,7 +87,7 @@ namespace Oxygen
             return;
         }
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         _info.reset(new KWindowInfo( window, -1U, -1U ) );
         #else
         _info.reset(new KWindowInfo( window, NET::WMAllProperties, NET::WM2AllProperties ));
@@ -102,7 +102,7 @@ namespace Oxygen
         const QString wmClassName( QString::fromUtf8( _info->windowClassName() ) );
 
         windowClass->setText( QStringLiteral( "%1 (%2 %3)" ).arg( wmClassClass ).arg( wmClassName ).arg( wmClassClass ) );
-        Ui::OxygenDetectWidget::windowTitle->setText( _info->name() );
+        Ui::CarbonDetectWidget::windowTitle->setText( _info->name() );
         emit detectionDone( exec() == QDialog::Accepted );
 
         return;

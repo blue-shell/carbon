@@ -1,8 +1,8 @@
-#ifndef oxygen_animationdata_h
-#define oxygen_animationdata_h
+#ifndef carbon_animationdata_h
+#define carbon_animationdata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationdata.h
+// carbonanimationdata.h
 // base class data container needed for widget animations
 // -------------------
 //
@@ -27,15 +27,15 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen.h"
-#include "oxygenanimation.h"
+#include "carbon.h"
+#include "carbonanimation.h"
 
 #include <QEvent>
 #include <QObject>
 #include <QWidget>
 #include <cmath>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! base class

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenclient.cpp
+// carbonclient.cpp
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -25,10 +25,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenclient.h"
+#include "carbonclient.h"
 
-#include "oxygenbutton.h"
-#include "oxygensizegrip.h"
+#include "carbonbutton.h"
+#include "carbonsizegrip.h"
 
 #include <cassert>
 #include <cmath>
@@ -45,7 +45,7 @@
 #include <QObjectList>
 #include <QMimeData>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //___________________________________________
@@ -63,7 +63,7 @@ namespace Oxygen
         _sourceItem( -1 ),
         _shadowAtom( 0 )
     {
-        #if !OXYGEN_USE_KDE4
+        #if !CARBON_USE_KDE4
         connect(options(), &KDecorationOptions::compositingChanged, this, &Client::updateCompositing);
         connect(options(), &KDecorationOptions::configChanged, this, &Client::updateConfig);
         #endif
@@ -80,7 +80,7 @@ namespace Oxygen
 
     //___________________________________________
     QString Client::visibleName() const
-    { return i18n("Oxygen"); }
+    { return i18n("Carbon"); }
 
     //___________________________________________
     void Client::init()
@@ -132,7 +132,7 @@ namespace Oxygen
 
         _initialized = true;
 
-        // first reset is needed to store Oxygen configuration
+        // first reset is needed to store Carbon configuration
         updateConfig();
 
     }
@@ -1545,7 +1545,7 @@ namespace Oxygen
     {
 
         // palette
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         QPalette palette = widget()->palette();
         #else
         QPalette palette = ParentDecorationClass::palette();

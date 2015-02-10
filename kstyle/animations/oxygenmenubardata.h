@@ -1,8 +1,8 @@
-#ifndef oxygenmenubar_data_h
-#define oxygenmenubar_data_h
+#ifndef carbonmenubar_data_h
+#define carbonmenubar_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmenubardata.h
+// carbonmenubardata.h
 // data container for QMenuBar animations
 // -------------------
 //
@@ -27,13 +27,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationdata.h"
-#include "oxygen.h"
+#include "carbonanimationdata.h"
+#include "carbon.h"
 
 #include <QMenuBar>
 #include <QBasicTimer>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! widget index
@@ -463,5 +463,5 @@ namespace Oxygen
     };
 }
 
-#include "oxygenmenubardata_imp.h"
+#include "carbonmenubardata_imp.h"
 #endif

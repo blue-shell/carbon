@@ -1,8 +1,8 @@
-#ifndef oxygencomboboxengine_h
-#define oxygencomboboxengine_h
+#ifndef carboncomboboxengine_h
+#define carboncomboboxengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygencomboboxengine.h
+// carboncomboboxengine.h
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygencomboboxdata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carboncomboboxdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! used for simple widgets

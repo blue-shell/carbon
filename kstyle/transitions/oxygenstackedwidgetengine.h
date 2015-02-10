@@ -1,8 +1,8 @@
-#ifndef oxygenstackedwidgetengine_h
-#define oxygenstackedwidgetengine_h
+#ifndef carbonstackedwidgetengine_h
+#define carbonstackedwidgetengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenstackedwidgetengine.h
+// carbonstackedwidgetengine.h
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenstackedwidgetdata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonstackedwidgetdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! used for simple widgets

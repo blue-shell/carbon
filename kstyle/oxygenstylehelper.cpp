@@ -19,7 +19,7 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygenstylehelper.h"
+#include "carbonstylehelper.h"
 
 #include <KColorUtils>
 #include <KColorScheme>
@@ -30,11 +30,11 @@
 
 #include <math.h>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <QX11Info>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________________________
@@ -43,7 +43,7 @@ namespace Oxygen
     { init(); }
 
     //______________________________________________________________________________
-    #if OXYGEN_USE_KDE4
+    #if CARBON_USE_KDE4
     StyleHelper::StyleHelper( const QByteArray& name ):
         Helper( name )
     { init(); }
@@ -502,7 +502,7 @@ namespace Oxygen
     //______________________________________________________________________________
     QPixmap StyleHelper::dialSlab( const QColor& color, const QColor& glow, qreal shade, int size )
     {
-        Oxygen::Cache<QPixmap>::Value* cache =  _dialSlabCache.get( color );
+        Carbon::Cache<QPixmap>::Value* cache =  _dialSlabCache.get( color );
 
         const quint64 key( ( colorKey(glow) << 32 ) | ( quint64( 256.0 * shade ) << 24 ) | size );
         QPixmap *pixmap = cache->object( key );
@@ -567,7 +567,7 @@ namespace Oxygen
     QPixmap StyleHelper::roundSlab( const QColor& color, const QColor& glow, qreal shade, int size )
     {
 
-        Oxygen::Cache<QPixmap>::Value* cache( _roundSlabCache.get( color ) );
+        Carbon::Cache<QPixmap>::Value* cache( _roundSlabCache.get( color ) );
 
         const quint64 key( ( colorKey(glow) << 32 ) | ( quint64( 256.0 * shade ) << 24 ) | size );
         QPixmap *pixmap = cache->object( key );
@@ -604,7 +604,7 @@ namespace Oxygen
     QPixmap StyleHelper::sliderSlab( const QColor& color, const QColor& glow, bool sunken, qreal shade, int size )
     {
 
-        Oxygen::Cache<QPixmap>::Value* cache( _sliderSlabCache.get( color ) );
+        Carbon::Cache<QPixmap>::Value* cache( _sliderSlabCache.get( color ) );
 
         const quint64 key( ( colorKey(glow) << 32 ) | ( quint64( 256.0 * shade ) << 24 ) | (sunken << 23 ) | size );
         QPixmap *pixmap = cache->object( key );
@@ -647,7 +647,7 @@ namespace Oxygen
     { painter.drawRoundedRect( rect.adjusted( offset, offset, -offset, -offset ), 4 - offset, 4 - offset ); }
 
     //____________________________________________________________________________________
-    void StyleHelper::renderHole( QPainter* painter, const QColor& base, const QRect& rect, StyleOptions options, qreal opacity, Oxygen::AnimationMode mode, TileSet::Tiles tiles )
+    void StyleHelper::renderHole( QPainter* painter, const QColor& base, const QRect& rect, StyleOptions options, qreal opacity, Carbon::AnimationMode mode, TileSet::Tiles tiles )
     {
         if( !rect.isValid() ) return;
         const QColor glow( frameGlowColor( QPalette::Active, options, opacity, mode ) );
@@ -849,7 +849,7 @@ namespace Oxygen
     {
 
         // get key
-        Oxygen::Cache<TileSet>::Value* cache( _scrollHandleCache.get( glow ) );
+        Carbon::Cache<TileSet>::Value* cache( _scrollHandleCache.get( glow ) );
 
         const quint64 key( ( colorKey(color) << 32 ) | size );
         TileSet *tileSet = cache->object( key );
@@ -1083,7 +1083,7 @@ namespace Oxygen
     //________________________________________________________________________________________________________
     bool StyleHelper::compositingActive( void ) const
     {
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         if( isX11() )
         {
 
@@ -1119,7 +1119,7 @@ namespace Oxygen
     {
 
         // get key
-        Oxygen::Cache<TileSet>::Value* cache( _holeCache.get( glow ) );
+        Carbon::Cache<TileSet>::Value* cache( _holeCache.get( glow ) );
 
         const quint64 key( ( colorKey(color) << 32 ) | (size << 4) | options );
         TileSet *tileSet = cache->object( key );
@@ -1318,7 +1318,7 @@ namespace Oxygen
 
         _useBackgroundGradient = true;
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
         if( isX11() )
         {
             // create compositing screen

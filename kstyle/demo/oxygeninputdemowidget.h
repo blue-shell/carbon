@@ -1,9 +1,9 @@
-#ifndef oxygeninputdemowidget_h
-#define oxygeninputdemowidget_h
+#ifndef carboninputdemowidget_h
+#define carboninputdemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygeninputdemowidget.h
-// oxygen input widgets (e.g. text editors) demo widget
+// carboninputdemowidget.h
+// carbon input widgets (e.g. text editors) demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -30,10 +30,10 @@
 #include <QWidget>
 #include <QToolButton>
 
-#include "oxygendemowidget.h"
-#include "ui_oxygeninputdemowidget.h"
+#include "carbondemowidget.h"
+#include "ui_carboninputdemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
     class InputDemoWidget: public DemoWidget
     {

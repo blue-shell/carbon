@@ -1,8 +1,8 @@
-#ifndef oxygenanimationconfigwidget_h
-#define oxygenanimationconfigwidget_h
+#ifndef carbonanimationconfigwidget_h
+#define carbonanimationconfigwidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigwidget.h
+// carbonanimationconfigwidget.h
 // animation configuration item
 // -------------------
 //
@@ -27,9 +27,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseanimationconfigwidget.h"
+#include "carbonbaseanimationconfigwidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
     class GenericAnimationConfigItem;
     class FollowMouseAnimationConfigItem;

@@ -1,5 +1,5 @@
-#ifndef oxygen_h
-#define oxygen_h
+#ifndef carbon_h
+#define carbon_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -25,7 +25,7 @@
 #include <QScopedPointer>
 #include <QWeakPointer>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //*@name convenience typedef
@@ -215,7 +215,7 @@ namespace Oxygen
 
 }
 
-Q_DECLARE_OPERATORS_FOR_FLAGS( Oxygen::AnimationModes );
-Q_DECLARE_OPERATORS_FOR_FLAGS( Oxygen::StyleOptions );
+Q_DECLARE_OPERATORS_FOR_FLAGS( Carbon::AnimationModes );
+Q_DECLARE_OPERATORS_FOR_FLAGS( Carbon::StyleOptions );
 
 #endif

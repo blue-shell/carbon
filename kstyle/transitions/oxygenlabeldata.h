@@ -1,8 +1,8 @@
-#ifndef oxygenlabel_datah
-#define oxygenlabel_datah
+#ifndef carbonlabel_datah
+#define carbonlabel_datah
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlabeldata.h
+// carbonlabeldata.h
 // data container for QLabel transition
 // -------------------
 //
@@ -27,13 +27,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitiondata.h"
+#include "carbontransitiondata.h"
 
 #include <QString>
 #include <QBasicTimer>
 #include <QLabel>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! generic data

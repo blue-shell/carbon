@@ -1,8 +1,8 @@
-#ifndef oxygenscrollbar_data_h
-#define oxygenscrollbar_data_h
+#ifndef carbonscrollbar_data_h
+#define carbonscrollbar_data_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenscrollbardata.h
+// carbonscrollbardata.h
 // data container for QScrollBar animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenwidgetstatedata.h"
+#include "carbonwidgetstatedata.h"
 
 #include <QStyle>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! scrollbar data

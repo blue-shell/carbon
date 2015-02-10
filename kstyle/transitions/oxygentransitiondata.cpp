@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentransitiondata.cpp
+// carbontransitiondata.cpp
 // data container for generic transitions
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitiondata.h"
+#include "carbontransitiondata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_________________________________________________________________

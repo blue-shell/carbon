@@ -1,8 +1,8 @@
-#ifndef oxygenprogressbarengine_h
-#define oxygenprogressbarengine_h
+#ifndef carbonprogressbarengine_h
+#define carbonprogressbarengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenprogressbarengine.h
+// carbonprogressbarengine.h
 // handle progress bar animations
 // -------------------
 //
@@ -27,13 +27,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygenprogressbardata.h"
-#include "oxygendatamap.h"
+#include "carbonbaseengine.h"
+#include "carbonprogressbardata.h"
+#include "carbondatamap.h"
 
 #include <QWidget>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! handles progress bar animations

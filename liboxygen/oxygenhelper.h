@@ -1,5 +1,5 @@
-#ifndef oxygen_helper_h
-#define oxygen_helper_h
+#ifndef carbon_helper_h
+#define carbon_helper_h
 
 /*
  * Copyright 2009-2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,15 +23,15 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygentileset.h"
-#include "config-liboxygen.h"
+#include "carbontileset.h"
+#include "config-libcarbon.h"
 
-#include "liboxygen.h"
+#include "libcarbon.h"
 
 #include <KColorScheme>
 #include <KSharedConfig>
 
-#if OXYGEN_USE_KDE4
+#if CARBON_USE_KDE4
 #include <KComponentData>
 #endif
 
@@ -43,11 +43,11 @@
 #include <QPainterPath>
 #include <QScopedPointer>
 
-#if OXYGEN_HAVE_X11
+#if CARBON_HAVE_X11
 #include <xcb/xcb.h>
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     template<typename T> class BaseCache: public QCache<quint64, T>
@@ -155,16 +155,16 @@ namespace Oxygen
 
     };
 
-    //* oxygen style helper class.
-    /** contains utility functions used at multiple places in both oxygen style and oxygen window decoration */
-    class OXYGEN_EXPORT Helper
+    //* carbon style helper class.
+    /** contains utility functions used at multiple places in both carbon style and carbon window decoration */
+    class CARBON_EXPORT Helper
     {
         public:
 
         //* constructor
         explicit Helper( KSharedConfig::Ptr config );
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         //* constructor
         explicit Helper( const QByteArray& );
         #endif
@@ -316,7 +316,7 @@ namespace Oxygen
         virtual void fillButtonSlab( QPainter&, const QRect&, const QColor&, bool sunken );
 
         //* inverse (inner-hole) shadow
-        /** this method must be public because it is used directly by OxygenStyle to draw dials */
+        /** this method must be public because it is used directly by CarbonStyle to draw dials */
         void drawInverseShadow( QPainter&, const QColor&, int pad, int size, qreal fuzz ) const;
 
         //* focus color
@@ -394,7 +394,7 @@ namespace Oxygen
 
         //@}
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
 
         //* xcb connection
         static xcb_connection_t* connection( void );
@@ -447,7 +447,7 @@ namespace Oxygen
         //* initialize
         void init( void );
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         //* component data
         KComponentData _componentData;
         #endif
@@ -460,7 +460,7 @@ namespace Oxygen
         //*@{
 
         //* slabs
-        Oxygen::Cache<TileSet> _slabCache;
+        Carbon::Cache<TileSet> _slabCache;
 
         //* sunken slabs
         BaseCache<TileSet> _slabSunkenCache;
@@ -500,7 +500,7 @@ namespace Oxygen
         //* background pixmap offsets
         QPoint _backgroundPixmapOffset;
 
-        #if OXYGEN_HAVE_X11
+        #if CARBON_HAVE_X11
 
         //* set value for given hint
         void setHasHint( xcb_window_t, xcb_atom_t, bool ) const;

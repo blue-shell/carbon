@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdiwindowdata.cpp
+// carbonmdiwindowdata.cpp
 // mdi window data container for window titlebar buttons
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmdiwindowdata.h"
+#include "carbonmdiwindowdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________

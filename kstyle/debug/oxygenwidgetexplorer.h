@@ -1,8 +1,8 @@
-#ifndef oxygenwidgetexplorer_h
-#define oxygenwidgetexplorer_h
+#ifndef carbonwidgetexplorer_h
+#define carbonwidgetexplorer_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenwidgetexplorer.h
+// carbonwidgetexplorer.h
 // print widget's and parent's information on mouse click
 // -------------------
 //
@@ -33,7 +33,7 @@
 #include <QSet>
 #include <QWidget>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! print widget's and parent's information on mouse click

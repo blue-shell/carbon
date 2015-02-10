@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigitem.h
+// carbonanimationconfigitem.h
 // animation configuration item
 // -------------------
 //
@@ -24,24 +24,24 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfigdialog.h"
-#include "../oxygen.h"
-#include "config-liboxygen.h"
+#include "carbonconfigdialog.h"
+#include "../carbon.h"
+#include "config-libcarbon.h"
 
 #include <QApplication>
 #include <QIcon>
 
 #include <KLocalizedString>
 
-namespace Oxygen
+namespace Carbon
 {
 
     int run(int argc, char *argv[])
     {
         QApplication app( argc, argv );
-        app.setApplicationName( i18n( "Oxygen Settings" ) );
-        app.setWindowIcon( QIcon::fromTheme( QStringLiteral( "oxygen" ) ) );
-        Oxygen::ConfigDialog dialog;
+        app.setApplicationName( i18n( "Carbon Settings" ) );
+        app.setWindowIcon( QIcon::fromTheme( QStringLiteral( "carbon" ) ) );
+        Carbon::ConfigDialog dialog;
         dialog.show();
         bool result = app.exec();
         return result;
@@ -52,9 +52,9 @@ namespace Oxygen
 //__________________________________________
 int main(int argc, char *argv[])
 {
-    #if !OXYGEN_USE_KDE4
-    KLocalizedString::setApplicationDomain("oxygen_style_config");
+    #if !CARBON_USE_KDE4
+    KLocalizedString::setApplicationDomain("carbon_style_config");
     #endif
 
-    return Oxygen::run( argc, argv );
+    return Carbon::run( argc, argv );
 }

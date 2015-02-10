@@ -1,9 +1,9 @@
-#ifndef oxygenconfigdialog_h
-#define oxygenconfigdialog_h
+#ifndef carbonconfigdialog_h
+#define carbonconfigdialog_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenconfigdialog.h
-// oxygen configuration dialog
+// carbonconfigdialog.h
+// carbon configuration dialog
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -27,12 +27,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "ui_oxygenconfigdialog.h"
+#include "ui_carbonconfigdialog.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class ConfigDialog: public QDialog, Ui::OxygenConfigDialog
+    class ConfigDialog: public QDialog, Ui::CarbonConfigDialog
     {
         Q_OBJECT
 

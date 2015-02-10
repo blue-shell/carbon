@@ -1,9 +1,9 @@
-#ifndef oxygenlistdemowidget_h
-#define oxygenlistdemowidget_h
+#ifndef carbonlistdemowidget_h
+#define carbonlistdemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlistdemowidget.h
-// oxygen lists (and trees) demo widget
+// carbonlistdemowidget.h
+// carbon lists (and trees) demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -29,10 +29,10 @@
 
 #include <QWidget>
 
-#include "oxygendemowidget.h"
-#include "ui_oxygenlistdemowidget.h"
+#include "carbondemowidget.h"
+#include "ui_carbonlistdemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     class ListDemoWidget: public DemoWidget

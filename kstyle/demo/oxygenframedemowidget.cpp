@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenframedemowidget.cpp
-// oxygen frames demo widget
+// carbonframedemowidget.cpp
+// carbon frames demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,13 +24,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenframedemowidget.h"
+#include "carbonframedemowidget.h"
 
 #include <QButtonGroup>
 
 #include <KComboBox>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_____________________________________________________________

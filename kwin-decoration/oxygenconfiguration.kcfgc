@@ -1,6 +1,6 @@
-File=oxygenconfigdata.kcfgc
+File=carbonconfigdata.kcfgc
 ClassName=Configuration
-NameSpace=Oxygen
+NameSpace=Carbon
 Singleton=false
 Mutators=true
 GlobalEnums=true

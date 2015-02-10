@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlineeditengine.cpp
+// carbonlineeditengine.cpp
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -26,9 +26,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenlineeditengine.h"
+#include "carbonlineeditengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

@@ -1,9 +1,9 @@
-#ifndef oxygenmdidemowidget_h
-#define oxygenmdidemowidget_h
+#ifndef carbonmdidemowidget_h
+#define carbonmdidemowidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdidemowidget.h
-// oxygen mdi windows demo widget
+// carbonmdidemowidget.h
+// carbon mdi windows demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -30,10 +30,10 @@
 #include <QWidget>
 #include <QToolButton>
 
-#include "oxygendemowidget.h"
-#include "ui_oxygenmdidemowidget.h"
+#include "carbondemowidget.h"
+#include "ui_carbonmdidemowidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
     class MdiDemoWidget: public DemoWidget
     {

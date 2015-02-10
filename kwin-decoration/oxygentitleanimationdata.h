@@ -1,8 +1,8 @@
-#ifndef oxygentitleanimationdata_h
-#define oxygentitleanimationdata_h
+#ifndef carbontitleanimationdata_h
+#define carbontitleanimationdata_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentitleanimationdata.h
+// carbontitleanimationdata.h
 // handles transition when window title is changed
 // -------------------
 //
@@ -27,7 +27,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimation.h"
+#include "carbonanimation.h"
 
 #include <cassert>
 #include <QObject>
@@ -37,7 +37,7 @@
 #include <QPixmap>
 
 
-namespace Oxygen
+namespace Carbon
 {
 
     class TitleAnimationData: public QObject

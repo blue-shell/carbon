@@ -1,8 +1,8 @@
-#ifndef oxygenmnemonics_h
-#define oxygenmnemonics_h
+#ifndef carbonmnemonics_h
+#define carbonmnemonics_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmnemonics.h
+// carbonmnemonics.h
 // enable/disable mnemonics display
 // -------------------
 //
@@ -27,9 +27,9 @@
 #include <QObject>
 #include <QApplication>
 
-#include "oxygenstyleconfigdata.h"
+#include "carbonstyleconfigdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     class Mnemonics: public QObject

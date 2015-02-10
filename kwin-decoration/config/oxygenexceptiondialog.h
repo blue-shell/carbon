@@ -1,7 +1,7 @@
-#ifndef oxygenexceptiondialog_h
-#define oxygenexceptiondialog_h
+#ifndef carbonexceptiondialog_h
+#define carbonexceptiondialog_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptiondialog.h
+// carbonexceptiondialog.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -25,19 +25,19 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "ui_oxygenexceptiondialog.h"
-#include "../oxygendecorationdefines.h"
+#include "ui_carbonexceptiondialog.h"
+#include "../carbondecorationdefines.h"
 
 #include <QCheckBox>
 #include <QMap>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class DetectDialog;
 
-    //! oxygen exceptions list
-    class ExceptionDialog: public QDialog, Ui::OxygenExceptionDialog
+    //! carbon exceptions list
+    class ExceptionDialog: public QDialog, Ui::CarbonExceptionDialog
     {
 
         Q_OBJECT

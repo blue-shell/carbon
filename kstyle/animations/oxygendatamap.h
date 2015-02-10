@@ -1,8 +1,8 @@
-#ifndef oxygendatamap_h
-#define oxygendatamap_h
+#ifndef carbondatamap_h
+#define carbondatamap_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendatamap.h
+// carbondatamap.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,14 +27,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen.h"
+#include "carbon.h"
 
 #include <QObject>
 #include <QMap>
 
 #include <QPaintDevice>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! data map

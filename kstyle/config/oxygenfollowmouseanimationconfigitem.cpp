@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenfollowmouseanimationconfigitem.cpp
+// carbonfollowmouseanimationconfigitem.cpp
 // animation configuration item
 // -------------------
 //
@@ -24,10 +24,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenfollowmouseanimationconfigitem.h"
-#include "ui_oxygenfollowmouseanimationconfigbox.h"
+#include "carbonfollowmouseanimationconfigitem.h"
+#include "ui_carbonfollowmouseanimationconfigbox.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygendemowidget.cpp
-// base class for oxygen demo widgets
+// carbondemowidget.cpp
+// base class for carbon demo widgets
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,4 +24,4 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendemowidget.h"
+#include "carbondemowidget.h"

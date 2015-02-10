@@ -23,9 +23,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenitemmodel.h"
+#include "carbonitemmodel.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________________________

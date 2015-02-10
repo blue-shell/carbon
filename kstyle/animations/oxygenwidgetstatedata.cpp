@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenwidgetstatedata.cpp
+// carbonwidgetstatedata.cpp
 // generic data container for widget widgetstate (mouse-over) animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenwidgetstatedata.h"
+#include "carbonwidgetstatedata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

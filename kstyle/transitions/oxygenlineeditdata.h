@@ -1,8 +1,8 @@
-#ifndef oxygenlineedit_datah
-#define oxygenlineedit_datah
+#ifndef carbonlineedit_datah
+#define carbonlineedit_datah
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlineeditdata.h
+// carbonlineeditdata.h
 // data container for QLineEdit transition
 // -------------------
 //
@@ -27,13 +27,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitiondata.h"
+#include "carbontransitiondata.h"
 
 #include <QString>
 #include <QBasicTimer>
 #include <QLineEdit>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! generic data

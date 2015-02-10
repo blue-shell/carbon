@@ -1,5 +1,5 @@
-#ifndef oxygenstyleplugin_h
-#define oxygenstyleplugin_h
+#ifndef carbonstyleplugin_h
+#define carbonstyleplugin_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -22,7 +22,7 @@
 
 #include <QStylePlugin>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class StylePlugin : public QStylePlugin
@@ -31,7 +31,7 @@ namespace Oxygen
         Q_OBJECT
 
         #if QT_VERSION >= 0x050000
-        Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QStyleFactoryInterface" FILE "oxygen.json" )
+        Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QStyleFactoryInterface" FILE "carbon.json" )
         #endif
 
         public:

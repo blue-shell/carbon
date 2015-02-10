@@ -1,8 +1,8 @@
-#ifndef oxygentoolboxengine_h
-#define oxygentoolboxengine_h
+#ifndef carbontoolboxengine_h
+#define carbontoolboxengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentoolboxengine.h
+// carbontoolboxengine.h
 // QToolBox engine
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenwidgetstatedata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonwidgetstatedata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* QToolBox animation engine

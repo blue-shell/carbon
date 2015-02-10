@@ -1,8 +1,8 @@
-#ifndef oxygenanimations_h
-#define oxygenanimations_h
+#ifndef carbonanimations_h
+#define carbonanimations_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimations.h
+// carbonanimations.h
 // container for all animation engines
 // -------------------
 //
@@ -27,25 +27,25 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbusyindicatorengine.h"
-#include "oxygendockseparatorengine.h"
-#include "oxygenheaderviewengine.h"
-#include "oxygenmdiwindowengine.h"
-#include "oxygenmenubarengine.h"
-#include "oxygenmenuengine.h"
-#include "oxygenprogressbarengine.h"
-#include "oxygenscrollbarengine.h"
-#include "oxygenspinboxengine.h"
-#include "oxygensplitterengine.h"
-#include "oxygentabbarengine.h"
-#include "oxygentoolbarengine.h"
-#include "oxygentoolboxengine.h"
-#include "oxygenwidgetstateengine.h"
+#include "carbonbusyindicatorengine.h"
+#include "carbondockseparatorengine.h"
+#include "carbonheaderviewengine.h"
+#include "carbonmdiwindowengine.h"
+#include "carbonmenubarengine.h"
+#include "carbonmenuengine.h"
+#include "carbonprogressbarengine.h"
+#include "carbonscrollbarengine.h"
+#include "carbonspinboxengine.h"
+#include "carbonsplitterengine.h"
+#include "carbontabbarengine.h"
+#include "carbontoolbarengine.h"
+#include "carbontoolboxengine.h"
+#include "carbonwidgetstateengine.h"
 
 #include <QObject>
 #include <QList>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! stores engines

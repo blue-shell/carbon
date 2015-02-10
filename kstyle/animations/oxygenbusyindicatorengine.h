@@ -1,8 +1,8 @@
-#ifndef oxygenbusyindicatorengine_h
-#define oxygenbusyindicatorengine_h
+#ifndef carbonbusyindicatorengine_h
+#define carbonbusyindicatorengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenbusyindicatorengine.h
+// carbonbusyindicatorengine.h
 // handle progress bar busy indicator
 // -------------------
 //
@@ -27,12 +27,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimation.h"
-#include "oxygenbaseengine.h"
-#include "oxygenbusyindicatordata.h"
-#include "oxygendatamap.h"
+#include "carbonanimation.h"
+#include "carbonbaseengine.h"
+#include "carbonbusyindicatordata.h"
+#include "carbondatamap.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* handles progress bar animations

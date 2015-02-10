@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimations.cpp
+// carbonanimations.cpp
 // container for all animation engines
 // -------------------
 //
@@ -26,9 +26,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimations.h"
-#include "oxygenpropertynames.h"
-#include "oxygenstyleconfigdata.h"
+#include "carbonanimations.h"
+#include "carbonpropertynames.h"
+#include "carbonstyleconfigdata.h"
 
 #include <QAbstractItemView>
 #include <QComboBox>
@@ -47,7 +47,7 @@
 #include <QToolButton>
 #include <QGroupBox>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

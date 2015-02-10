@@ -1,8 +1,8 @@
-#ifndef oxygenfollowmouseanimationconfigitem_h
-#define oxygenfollowmouseanimationconfigitem_h
+#ifndef carbonfollowmouseanimationconfigitem_h
+#define carbonfollowmouseanimationconfigitem_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenanimationconfigitem.h
+// carbonanimationconfigitem.h
 // animation configuration item
 // -------------------
 //
@@ -27,8 +27,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimationconfigitem.h"
-#include "../oxygen.h"
+#include "carbonanimationconfigitem.h"
+#include "../carbon.h"
 
 #include <KComboBox>
 
@@ -38,7 +38,7 @@
 
 class Ui_FollowMouseAnimationConfigBox;
 
-namespace Oxygen
+namespace Carbon
 {
 
     class FollowMouseAnimationConfigBox: public QFrame

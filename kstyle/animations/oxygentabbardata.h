@@ -1,5 +1,5 @@
-#ifndef oxygentabbar_data_h
-#define oxygentabbar_data_h
+#ifndef carbontabbar_data_h
+#define carbontabbar_data_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -20,11 +20,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  *************************************************************************/
 
-#include "oxygenanimationdata.h"
+#include "carbonanimationdata.h"
 
 #include <QTabBar>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* tabbars

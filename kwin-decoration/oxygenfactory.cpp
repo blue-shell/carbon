@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygen.cpp
+// carbon.cpp
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,29 +24,29 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenfactory.h"
+#include "carbonfactory.h"
 
-#include "oxygenclient.h"
-#include "oxygenexceptionlist.h"
+#include "carbonclient.h"
+#include "carbonexceptionlist.h"
 
 #include <KSharedConfig>
 #include <KConfigGroup>
 #include <KWindowInfo>
 
-#if OXYGEN_USE_KDE4
-KWIN_DECORATION(Oxygen::Factory)
+#if CARBON_USE_KDE4
+KWIN_DECORATION(Carbon::Factory)
 #else
-KWIN_DECORATION(OxygenPluginFactory, "oxygenclient.json", Oxygen::Factory)
+KWIN_DECORATION(CarbonPluginFactory, "carbonclient.json", Carbon::Factory)
 #endif
 
-#if !OXYGEN_USE_KDE4
+#if !CARBON_USE_KDE4
 #endif
 
-namespace Oxygen
+namespace Carbon
 {
 
     //___________________________________________________
-    #if OXYGEN_USE_KDE4
+    #if CARBON_USE_KDE4
     Factory::Factory( void ):
 
     #else
@@ -54,14 +54,14 @@ namespace Oxygen
         ParentFactoryClass(parent),
     #endif
         _initialized( false )
-        ,_config( KSharedConfig::openConfig( QStringLiteral("oxygenrc") ) )
+        ,_config( KSharedConfig::openConfig( QStringLiteral("carbonrc") ) )
         ,_helper( _config )
         ,_shadowCache( _helper )
     {
         readConfig();
         setInitialized( true );
 
-        #if !OXYGEN_USE_KDE4
+        #if !CARBON_USE_KDE4
         connect(options(), &KDecorationOptions::colorsChanged, this, [this]() {
             _shadowCache.invalidateCaches();
         });
@@ -89,7 +89,7 @@ namespace Oxygen
     bool Factory::reset(unsigned long changed)
     {
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         if( changed & SettingColors )
         { _shadowCache.invalidateCaches(); }
 
@@ -121,7 +121,7 @@ namespace Oxygen
         if( !_defaultConfiguration ) _defaultConfiguration = ConfigurationPtr(new Configuration());
         _defaultConfiguration->setCurrentGroup( QStringLiteral("Windeco") );
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         _defaultConfiguration->readConfig();
         #else
         _defaultConfiguration->load();

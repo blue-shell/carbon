@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenlineeditdata.cpp
+// carbonlineeditdata.cpp
 // data container for QLineEdit transition
 // -------------------
 //
@@ -26,7 +26,7 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenlineeditdata.h"
+#include "carbonlineeditdata.h"
 
 #include <QEvent>
 #include <QDateTimeEdit>
@@ -36,7 +36,7 @@
 #include <QStyle>
 #include <QStyleOptionFrameV2>
 
-namespace Oxygen
+namespace Carbon
 {
 
     // use 20 milliseconds for animation lock

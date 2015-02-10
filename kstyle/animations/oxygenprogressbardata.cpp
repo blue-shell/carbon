@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenprogressbar.cpp
+// carbonprogressbar.cpp
 // data container for progressbar animations
 // -------------------
 //
@@ -24,11 +24,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenprogressbardata.h"
+#include "carbonprogressbardata.h"
 
 #include <QProgressBar>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

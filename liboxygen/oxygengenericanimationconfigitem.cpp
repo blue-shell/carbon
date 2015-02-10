@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygengenericanimationconfigitem.cpp
+// carbongenericanimationconfigitem.cpp
 // animation configuration item
 // -------------------
 //
@@ -24,13 +24,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygengenericanimationconfigitem.h"
+#include "carbongenericanimationconfigitem.h"
 
-#include "ui_oxygengenericanimationconfigbox.h"
+#include "ui_carbongenericanimationconfigbox.h"
 
 #include <KLocalizedString>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_______________________________________________

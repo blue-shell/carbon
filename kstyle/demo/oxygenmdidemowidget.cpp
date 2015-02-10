@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmdidemowidget.cpp
-// oxygen mdi windows demo widget
+// carbonmdidemowidget.cpp
+// carbon mdi windows demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,14 +24,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmdidemowidget.h"
+#include "carbonmdidemowidget.h"
 
 #include <QMdiSubWindow>
 #include <QMenuBar>
 #include <QMenu>
 #include <QIcon>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________

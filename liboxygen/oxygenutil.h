@@ -1,5 +1,5 @@
-#ifndef oxygenutil_h
-#define oxygenutil_h
+#ifndef carbonutil_h
+#define carbonutil_h
 
 /*
  * Copyright 2012 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -19,15 +19,15 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygen_export.h"
+#include "carbon_export.h"
 
 #include <kconfigskeleton.h>
 #include <KConfig>
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class OXYGEN_EXPORT Util
+    class CARBON_EXPORT Util
     {
 
         public:

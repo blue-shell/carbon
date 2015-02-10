@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentabdemowidget.cpp
-// oxygen tabwidget demo widget
+// carbontabdemowidget.cpp
+// carbon tabwidget demo widget
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -24,12 +24,12 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentabdemowidget.h"
+#include "carbontabdemowidget.h"
 
 #include <QToolButton>
 #include <QIcon>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________

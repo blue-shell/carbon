@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenmnemonics.cpp
+// carbonmnemonics.cpp
 // enable/disable mnemonics display
 // -------------------
 //
@@ -20,12 +20,12 @@
 // Boston, MA 02110-1301, USA.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenmnemonics.h"
+#include "carbonmnemonics.h"
 
 #include <QKeyEvent>
 #include <QWidget>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________

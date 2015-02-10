@@ -1,7 +1,7 @@
-#ifndef oxygentransitionwidget_h
-#define oxygentransitionwidget_h
+#ifndef carbontransitionwidget_h
+#define carbontransitionwidget_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygentransitionwidget.h
+// carbontransitionwidget.h
 // stores event filters and maps widgets to transitions for transitions
 // -------------------
 //
@@ -26,14 +26,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimation.h"
-#include "oxygen.h"
+#include "carbonanimation.h"
+#include "carbon.h"
 
 #include <QWidget>
 
 #include <cmath>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! temporary widget used to perform smooth transition between one widget state and another

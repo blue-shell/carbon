@@ -1,5 +1,5 @@
-#ifndef oxygenstyleconfigmodule_h
-#define oxygenstyleconfigmodule_h
+#ifndef carbonstyleconfigmodule_h
+#define carbonstyleconfigmodule_h
 
 /*************************************************************************
  * Copyright (C) 2014 by Hugo Pereira Da Costa <hugo.pereira@free.fr>    *
@@ -20,11 +20,11 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  *************************************************************************/
 
-#include "oxygenstyleconfig.h"
+#include "carbonstyleconfig.h"
 
 #include <KCModule>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* configuration module

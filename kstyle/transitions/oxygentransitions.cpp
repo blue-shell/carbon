@@ -1,7 +1,7 @@
 // krazy:excludeall=qclasses
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygentransitions.cpp
+// carbontransitions.cpp
 // container for all transition engines
 // -------------------
 //
@@ -26,11 +26,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitions.h"
-#include "oxygenpropertynames.h"
-#include "oxygenstyleconfigdata.h"
+#include "carbontransitions.h"
+#include "carbonpropertynames.h"
+#include "carbonstyleconfigdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________________--

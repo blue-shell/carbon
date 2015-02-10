@@ -1,8 +1,8 @@
-#ifndef oxygensplitterproxy_h
-#define oxygensplitterproxy_h
+#ifndef carbonsplitterproxy_h
+#define carbonsplitterproxy_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygensplitterproxy.h
+// carbonsplitterproxy.h
 // Extended hit area for Splitters
 // -------------------
 //
@@ -27,7 +27,7 @@
 // Boston, MA 02110-1301, USA.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygen.h"
+#include "carbon.h"
 
 #include <QEvent>
 #include <QMap>
@@ -37,9 +37,9 @@
 #include <QSplitterHandle>
 #include <QWidget>
 
-#include "oxygenaddeventfilter.h"
+#include "carbonaddeventfilter.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     class SplitterProxy;

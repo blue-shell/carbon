@@ -19,14 +19,14 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygendecohelper.h"
+#include "carbondecohelper.h"
 
 #include <QPainter>
 #include <KColorUtils>
 
 #include <cmath>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________________________________________
@@ -51,7 +51,7 @@ namespace Oxygen
     QPixmap DecoHelper::windecoButton(const QColor &color, const QColor& glow, bool sunken, int size)
     {
 
-        Oxygen::Cache<QPixmap>::Value* cache( _windecoButtonCache.get( color ) );
+        Carbon::Cache<QPixmap>::Value* cache( _windecoButtonCache.get( color ) );
 
         const quint64 key( ( colorKey(glow) << 32 ) | (sunken << 23 ) | size );
         QPixmap *pixmap = cache->object( key );

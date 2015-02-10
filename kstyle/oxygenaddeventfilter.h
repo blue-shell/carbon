@@ -1,8 +1,8 @@
-#ifndef oxygenaddeventfilter_h
-#define oxygenaddeventfilter_h
+#ifndef carbonaddeventfilter_h
+#define carbonaddeventfilter_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenaddeventfilter.h
+// carbonaddeventfilter.h
 // used to block add a child to a widget, blocking AddChild parent events
 // -------------------
 //
@@ -33,7 +33,7 @@
 #include <QObject>
 #include <QEvent>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class AddEventFilter: public QObject

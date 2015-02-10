@@ -1,8 +1,8 @@
-#ifndef oxygenstackedwidget_datah
-#define oxygenstackedwidget_datah
+#ifndef carbonstackedwidget_datah
+#define carbonstackedwidget_datah
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenstackedwidgetdata.h
+// carbonstackedwidgetdata.h
 // data container for QStackedWidget transition
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitiondata.h"
+#include "carbontransitiondata.h"
 
 #include <QStackedWidget>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! generic data

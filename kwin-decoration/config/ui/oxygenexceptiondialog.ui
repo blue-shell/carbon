@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>OxygenExceptionDialog</class>
- <widget class="QDialog" name="OxygenExceptionDialog">
+ <class>CarbonExceptionDialog</class>
+ <widget class="QDialog" name="CarbonExceptionDialog">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -268,7 +268,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>OxygenExceptionDialog</receiver>
+   <receiver>CarbonExceptionDialog</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -284,7 +284,7 @@
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>OxygenExceptionDialog</receiver>
+   <receiver>CarbonExceptionDialog</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

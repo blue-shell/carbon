@@ -1,8 +1,8 @@
-#ifndef oxygenclient_h
-#define oxygenclient_h
+#ifndef carbonclient_h
+#define carbonclient_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenclient.h
+// carbonclient.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -28,13 +28,13 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenanimation.h"
-#include "oxygenclientgroupitemdata.h"
-#include "oxygenconfiguration.h"
-#include "oxygendecohelper.h"
-#include "oxygenfactory.h"
-#include "oxygenshadowcache.h"
-#include "oxygentitleanimationdata.h"
+#include "carbonanimation.h"
+#include "carbonclientgroupitemdata.h"
+#include "carbonconfiguration.h"
+#include "carbondecohelper.h"
+#include "carbonfactory.h"
+#include "carbonshadowcache.h"
+#include "carbontitleanimationdata.h"
 
 #include <kcommondecoration.h>
 
@@ -44,11 +44,11 @@
 
 #include <xcb/xcb.h>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //* convenience typedef for base class
-    #if OXYGEN_USE_KDE4
+    #if CARBON_USE_KDE4
     using ParentDecorationClass = KCommonDecorationUnstable;
     #else
     using ParentDecorationClass = KCommonDecoration;
@@ -486,10 +486,10 @@ namespace Oxygen
 
     };
 
-} // namespace Oxygen
+} // namespace Carbon
 
 //____________________________________________________
-Qt::Alignment Oxygen::Client::titleAlignment( void ) const
+Qt::Alignment Carbon::Client::titleAlignment( void ) const
 {
     switch( _configuration->titleAlignment() )
     {
@@ -505,7 +505,7 @@ Qt::Alignment Oxygen::Client::titleAlignment( void ) const
 }
 
 //____________________________________________________
-int Oxygen::Client::buttonSize( void ) const
+int Carbon::Client::buttonSize( void ) const
 {
     switch( _configuration->buttonSize() )
     {
@@ -521,7 +521,7 @@ int Oxygen::Client::buttonSize( void ) const
 }
 
 //____________________________________________________
-int Oxygen::Client::frameBorder( void ) const
+int Carbon::Client::frameBorder( void ) const
 {
     switch( _configuration->frameBorder() )
     {

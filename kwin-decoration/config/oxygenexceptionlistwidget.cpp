@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptionlistwidget.cpp
+// carbonexceptionlistwidget.cpp
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,9 +23,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenexceptionlistwidget.h"
-#include "oxygenexceptiondialog.h"
-#include "config-liboxygen.h"
+#include "carbonexceptionlistwidget.h"
+#include "carbonexceptiondialog.h"
+#include "config-libcarbon.h"
 
 #include <QMessageBox>
 #include <QPointer>
@@ -33,7 +33,7 @@
 #include <KLocalizedString>
 
 //__________________________________________________________
-namespace Oxygen
+namespace Carbon
 {
 
     //__________________________________________________________
@@ -110,10 +110,10 @@ namespace Oxygen
 
 
         QPointer<ExceptionDialog> dialog = new ExceptionDialog( this );
-        dialog->setWindowTitle( i18n( "New Exception - Oxygen Settings" ) );
+        dialog->setWindowTitle( i18n( "New Exception - Carbon Settings" ) );
         ConfigurationPtr exception( new Configuration() );
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         exception->readConfig();
         #else
         exception->load();
@@ -163,7 +163,7 @@ namespace Oxygen
 
         // create dialog
         QPointer<ExceptionDialog> dialog( new ExceptionDialog( this ) );
-        dialog->setWindowTitle( i18n( "Edit Exception - Oxygen Settings" ) );
+        dialog->setWindowTitle( i18n( "Edit Exception - Carbon Settings" ) );
         dialog->setException( exception );
 
         // map dialog
@@ -196,7 +196,7 @@ namespace Oxygen
 
         // confirmation dialog
         {
-            QMessageBox messageBox( QMessageBox::Question, i18n("Question - Oxygen Settings" ), i18n("Remove selected exception?"), QMessageBox::Yes | QMessageBox::Cancel );
+            QMessageBox messageBox( QMessageBox::Question, i18n("Question - Carbon Settings" ), i18n("Remove selected exception?"), QMessageBox::Yes | QMessageBox::Cancel );
             messageBox.button( QMessageBox::Yes )->setText( i18n("Remove") );
             messageBox.setDefaultButton( QMessageBox::Cancel );
             if( messageBox.exec() == QMessageBox::Cancel ) return;
@@ -341,7 +341,7 @@ namespace Oxygen
         while( exception->exceptionPattern().isEmpty() || !QRegExp( exception->exceptionPattern() ).isValid() )
         {
 
-            QMessageBox::warning( this, i18n( "Warning - Oxygen Settings" ), i18n("Regular Expression syntax is incorrect") );
+            QMessageBox::warning( this, i18n( "Warning - Carbon Settings" ), i18n("Regular Expression syntax is incorrect") );
             QPointer<ExceptionDialog> dialog( new ExceptionDialog( this ) );
             dialog->setException( exception );
             if( dialog->exec() == QDialog::Rejected )

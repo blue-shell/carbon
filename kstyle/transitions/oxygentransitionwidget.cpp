@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygentransitionwidget.cpp
+// carbontransitionwidget.cpp
 // stores event filters and maps widgets to transitions for transitions
 // -------------------
 //
@@ -24,14 +24,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygentransitionwidget.h"
+#include "carbontransitionwidget.h"
 
 #include <QPainter>
 #include <QPaintEvent>
 #include <QStyleOption>
 #include <QTextStream>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //________________________________________________

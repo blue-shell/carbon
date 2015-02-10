@@ -1,9 +1,9 @@
-#ifndef oxygendemodialog_h
-#define oxygendemodialog_h
+#ifndef carbondemodialog_h
+#define carbondemodialog_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendemodialog.h
-// oxygen demo dialog
+// carbondemodialog.h
+// carbon demo dialog
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -27,14 +27,14 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygendemowidget.h"
-#include "ui_oxygendemodialog.h"
+#include "carbondemowidget.h"
+#include "ui_carbondemodialog.h"
 
 #include <QList>
 #include <QWidget>
 #include <QCheckBox>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class ButtonDemoWidget;
@@ -44,7 +44,7 @@ namespace Oxygen
     class MdiDemoWidget;
     class SliderDemoWidget;
     class TabDemoWidget;
-    class DemoDialog: public QDialog, Ui::OxygenDemoDialog
+    class DemoDialog: public QDialog, Ui::CarbonDemoDialog
     {
         Q_OBJECT
 

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenstackedwidgetengine.cpp
+// carbonstackedwidgetengine.cpp
 // stores event filters and maps widgets to animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenstackedwidgetengine.h"
+#include "carbonstackedwidgetengine.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________

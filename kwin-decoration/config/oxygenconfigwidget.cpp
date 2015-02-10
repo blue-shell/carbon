@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenconfigurationui.cpp
+// carbonconfigurationui.cpp
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,8 +23,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfigwidget.h"
-#include "oxygenanimationconfigwidget.h"
+#include "carbonconfigwidget.h"
+#include "carbonanimationconfigwidget.h"
 
 #include <QGroupBox>
 #include <QIcon>
@@ -33,7 +33,7 @@
 
 #include <KLocalizedString>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_________________________________________________________

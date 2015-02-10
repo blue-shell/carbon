@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygendemodialog.cpp
-// oxygen configuration dialog
+// carbondemodialog.cpp
+// carbon configuration dialog
 // -------------------
 //
 // Copyright (c) 2010 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,17 +23,17 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
-#include "oxygendemodialog.h"
+#include "carbondemodialog.h"
 
-#include "oxygenbenchmarkwidget.h"
-#include "oxygenbuttondemowidget.h"
-#include "oxygeninputdemowidget.h"
-#include "oxygenframedemowidget.h"
-#include "oxygenlistdemowidget.h"
-#include "oxygenmdidemowidget.h"
-#include "oxygensliderdemowidget.h"
-#include "oxygentabdemowidget.h"
-#include "config-liboxygen.h"
+#include "carbonbenchmarkwidget.h"
+#include "carbonbuttondemowidget.h"
+#include "carboninputdemowidget.h"
+#include "carbonframedemowidget.h"
+#include "carbonlistdemowidget.h"
+#include "carbonmdidemowidget.h"
+#include "carbonsliderdemowidget.h"
+#include "carbontabdemowidget.h"
+#include "config-libcarbon.h"
 
 #include <QTextStream>
 #include <QShortcut>
@@ -42,7 +42,7 @@
 #include <QIcon>
 #include <KStandardShortcut>
 
-namespace Oxygen
+namespace Carbon
 {
     //_______________________________________________________________
     DemoDialog::DemoDialog( QWidget* parent ):
@@ -51,12 +51,12 @@ namespace Oxygen
         _rightToLeftCheckBox( 0 )
     {
 
-        setWindowTitle( i18n( "Oxygen Demo" ) );
+        setWindowTitle( i18n( "Carbon Demo" ) );
 
         // ui
         setupUi(this);
 
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         // install Quit shortcut
         connect( new QShortcut( KStandardShortcut::quit().primary(), this ), SIGNAL(activated()), SLOT(close()) );
         connect( new QShortcut( KStandardShortcut::quit().alternate(), this ), SIGNAL(activated()), SLOT(close()) );
@@ -193,7 +193,7 @@ namespace Oxygen
             what << " - ";
         }
 
-        what << i18n( "Oxygen Demo" );
+        what << i18n( "Carbon Demo" );
         setWindowTitle( title );
     }
 
@@ -234,7 +234,7 @@ namespace Oxygen
     //_______________________________________________________________
     void DemoDialog::setPageIcon( KPageWidgetItem* page, const QString& iconName ) const
     {
-        #if OXYGEN_USE_KDE4
+        #if CARBON_USE_KDE4
         page->setIcon( KIcon( iconName ) );
         #else
         page->setIcon( QIcon::fromTheme( iconName ) );

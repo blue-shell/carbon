@@ -1,8 +1,8 @@
-#ifndef oxygendetectwidget_h
-#define oxygendetectwidget_h
+#ifndef carbondetectwidget_h
+#define carbondetectwidget_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygendetectwidget.h
+// carbondetectwidget.h
 // Note: this class is a stripped down version of
 // /kdebase/workspace/kwin/kcmkwin/kwinrules/detectwidget.h
 // Copyright (c) 2004 Lubos Lunak <l.lunak@kde.org>
@@ -30,8 +30,8 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenconfiguration.h"
-#include "ui_oxygendetectwidget.h"
+#include "carbonconfiguration.h"
+#include "ui_carbondetectwidget.h"
 
 #include <QByteArray>
 #include <QCheckBox>
@@ -42,10 +42,10 @@
 #include <kwindowsystem.h>
 #include <xcb/xcb.h>
 
-namespace Oxygen
+namespace Carbon
 {
 
-    class DetectDialog : public QDialog, Ui::OxygenDetectWidget
+    class DetectDialog : public QDialog, Ui::CarbonDetectWidget
     {
 
         Q_OBJECT

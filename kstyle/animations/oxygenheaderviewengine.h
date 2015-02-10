@@ -1,8 +1,8 @@
-#ifndef oxygenheaderviewengine_h
-#define oxygenheaderviewengine_h
+#ifndef carbonheaderviewengine_h
+#define carbonheaderviewengine_h
 
 //////////////////////////////////////////////////////////////////////////////
-// oxygenheaderviewengine.h
+// carbonheaderviewengine.h
 // stores event filters and maps widgets to timelines for animations
 // -------------------
 //
@@ -27,11 +27,11 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenbaseengine.h"
-#include "oxygendatamap.h"
-#include "oxygenheaderviewdata.h"
+#include "carbonbaseengine.h"
+#include "carbondatamap.h"
+#include "carbonheaderviewdata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //! stores headerview hovered action and timeLine

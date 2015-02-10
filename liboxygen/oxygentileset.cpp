@@ -18,11 +18,11 @@
  * Boston, MA 02110-1301, USA.
  */
 
-#include "oxygentileset.h"
+#include "carbontileset.h"
 
 #include <QPainter>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //___________________________________________________________

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygensplitterproxy.cpp
+// carbonsplitterproxy.cpp
 // Extended hit area for Splitters
 // -------------------
 //
@@ -24,14 +24,14 @@
 // Boston, MA 02110-1301, USA.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygensplitterproxy.h"
-#include "oxygenstyleconfigdata.h"
+#include "carbonsplitterproxy.h"
+#include "carbonstyleconfigdata.h"
 
 #include <QCoreApplication>
 #include <QDebug>
 #include <QPainter>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //____________________________________________________________________

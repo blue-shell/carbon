@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenexceptiondialog.cpp
+// carbonexceptiondialog.cpp
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -23,10 +23,10 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenexceptiondialog.h"
-#include "oxygendetectwidget.h"
+#include "carbonexceptiondialog.h"
+#include "carbondetectwidget.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //___________________________________________

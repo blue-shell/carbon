@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygenenabledata.cpp
+// carbonenabledata.cpp
 // generic data container for widget enable/disable animations
 // -------------------
 //
@@ -24,9 +24,9 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "oxygenenabledata.h"
+#include "carbonenabledata.h"
 
-namespace Oxygen
+namespace Carbon
 {
 
     //______________________________________________

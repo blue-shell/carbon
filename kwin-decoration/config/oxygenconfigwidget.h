@@ -1,7 +1,7 @@
-#ifndef oxygenconfigwidget_h
-#define oxygenconfigwidget_h
+#ifndef carbonconfigwidget_h
+#define carbonconfigwidget_h
 //////////////////////////////////////////////////////////////////////////////
-// oxygenconfigurationui.h
+// carbonconfigurationui.h
 // -------------------
 //
 // Copyright (c) 2009 Hugo Pereira Da Costa <hugo.pereira@free.fr>
@@ -25,17 +25,17 @@
 // IN THE SOFTWARE.
 //////////////////////////////////////////////////////////////////////////////
 
-#include "ui_oxygenconfigurationui.h"
-#include "oxygenshadowconfigwidget.h"
-#include "oxygenexceptionlistwidget.h"
-#include "../oxygendecorationdefines.h"
+#include "ui_carbonconfigurationui.h"
+#include "carbonshadowconfigwidget.h"
+#include "carbonexceptionlistwidget.h"
+#include "../carbondecorationdefines.h"
 
 #include <KComboBox>
 #include <QWidget>
 #include <QCheckBox>
 #include <QVector>
 
-namespace Oxygen
+namespace Carbon
 {
 
     class AnimationConfigWidget;
@@ -114,7 +114,7 @@ namespace Oxygen
         private:
 
         //! ui
-        Ui_OxygenConfigurationUI ui;
+        Ui_CarbonConfigurationUI ui;
 
         //! internal exception
         ConfigurationPtr _configuration;

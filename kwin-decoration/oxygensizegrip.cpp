@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////////////
-// oxygensizegrip.cpp
+// carbonsizegrip.cpp
 // bottom right size grip for borderless windows
 // -------------------
 //
@@ -25,9 +25,9 @@
 //////////////////////////////////////////////////////////////////////////////
 
 
-#include "oxygensizegrip.h"
-#include "oxygenbutton.h"
-#include "oxygenclient.h"
+#include "carbonsizegrip.h"
+#include "carbonbutton.h"
+#include "carbonclient.h"
 
 #include <cassert>
 #include <QPainter>
@@ -36,7 +36,7 @@
 
 #include <xcb/xcb.h>
 
-namespace Oxygen
+namespace Carbon
 {
 
     //_____________________________________________
@@ -100,7 +100,7 @@ namespace Oxygen
             // find client's parent
             xcb_window_t current = windowId;
             xcb_connection_t* connection = _client.data()->helper().connection();
-            #if OXYGEN_USE_KDE4
+            #if CARBON_USE_KDE4
             while( true )
             {
 
@@ -119,7 +119,7 @@ namespace Oxygen
 
             // reparent
             xcb_reparent_window( connection, winId(), current, 0, 0 );
-            setWindowTitle( "Oxygen::SizeGrip" );
+            setWindowTitle( "Carbon::SizeGrip" );
 
         } else {
 
@@ -238,7 +238,7 @@ namespace Oxygen
 
         } else {
 
-            #if OXYGEN_USE_KDE4
+            #if CARBON_USE_KDE4
             position -= QPoint(
                 _client.data()->layoutMetric( Client::LM_BorderRight ),
                 _client.data()->layoutMetric( Client::LM_BorderBottom ) );

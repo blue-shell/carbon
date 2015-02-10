@@ -1,9 +1,9 @@
 set(cursors_folders
-    Oxygen_Black
-    Oxygen_Blue
-    Oxygen_White
-    Oxygen_Yellow
-    Oxygen_Zion
+    Carbon_Black
+    Carbon_Blue
+    Carbon_White
+    Carbon_Yellow
+    Carbon_Zion
     KDE_Classic
    )
 
