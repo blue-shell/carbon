@@ -1,0 +1,35 @@
+for x in `find -name '*.cpp' -or -name '*.h' -or -name CMakeList.txt`; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.cpp' -or -name '*.h' -or -name CMakeList.txt`; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.cpp' -or -name '*.h' -or -name CMakeList.txt`; do sed -i s/OXYGEN/CARBON/g $x; done
+for x in `find -name '*.cpp' -or -name '*.h' -or -name CMakeLists.txt`; do sed -i s/OXYGEN/CARBON/g $x; done
+for x in `find -name '*.cpp' -or -name '*.h' -or -name CMakeLists.txt`; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.cpp' -or -name '*.h' -or -name CMakeLists.txt`; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.themerc'`; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.theme'`; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.ui'`; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.ui'`; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.desktop'`; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.desktop'`; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.cmake' -or -name '.kc*' `; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.cmake' -or -name '.kc*' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.cmake' -or -name '.kcfg*' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.cmake' -or -name '.kcfgc*' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name 'Messages.sh' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name 'README' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name 'defaults' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.svg' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.json' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.kcfg' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name 'defaults' `; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.CMAKE' `; do sed -i s/OXYGEN/CARBON/g $x; done
+for x in `find -name '*.cmake' `; do sed -i s/OXYGEN/CARBON/g $x; done
+for x in `find -name '*.svg' `; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.kcfgc' `; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.kcfgc' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.json' `; do sed -i s/Oxygen/Carbon/g $x; done
+for x in `find -name '*.themerc' `; do sed -i s/oxygen/carbon/g $x; done
+for x in `find -name '*.json' `; do sed -i s/Oxygen/Carbon/g $x; done
+
+
+for x in `find . -not -path '*/\.*' `; do git mv $x `echo $x | sed s/oxygen/carbon/g`; done
+for x in `find . -not -path '*/\.*' `; do git mv $x `echo $x | sed s/Oxygen/Carbon/g`; done

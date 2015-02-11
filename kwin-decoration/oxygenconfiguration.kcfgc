@@ -1,6 +1,0 @@
-File=carbonconfigdata.kcfgc
-ClassName=Configuration
-NameSpace=Carbon
-Singleton=false
-Mutators=true
-GlobalEnums=true

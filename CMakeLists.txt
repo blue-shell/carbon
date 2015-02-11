@@ -30,14 +30,6 @@ if(CARBON_USE_KDE4)
   add_definitions(${QT_DEFINITIONS} ${KDE4_DEFINITIONS})
   include_directories(${KDE4_INCLUDES})
 
-  ### KDE workspace (needed for window decoration)
-  find_package(KDE4Workspace 4.9.80)
-  set_package_properties(
-    KDE4Workspace PROPERTIES
-    TYPE OPTIONAL
-    PURPOSE "Required to carbon window decoration for kwin"
- )
-
   ### XCB
   find_package(PkgConfig)
   pkg_check_modules(XCB xcb x11-xcb)
@@ -45,9 +37,6 @@ if(CARBON_USE_KDE4)
 
   add_subdirectory(libcarbon)
   add_subdirectory(kstyle)
-  if(KDE4Workspace_FOUND)
-     add_subdirectory(kwin-decoration)
-  endif()
 
 else()
 
@@ -88,12 +77,6 @@ else()
 
   add_subdirectory(libcarbon)
   add_subdirectory(kstyle)
-  add_subdirectory(cursors)
-
-  add_subdirectory(sounds)
-
-  install(DIRECTORY lookandfeel/ DESTINATION ${CMAKE_INSTALL_PREFIX}/share/plasma/look-and-feel/org.kde.carbon
-          PATTERN "Messages.sh" EXCLUDE PATTERN "CMakeLists.txt" EXCLUDE)
 
   # po/ dir added by packaging scripts
   if(EXISTS ${CMAKE_SOURCE_DIR}/po AND IS_DIRECTORY ${CMAKE_SOURCE_DIR}/po)
