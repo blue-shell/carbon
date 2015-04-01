@@ -69,9 +69,8 @@ set(carbon_PART_SRCS
 )
 
 if(CARBON_USE_KDE4)
-
   kde4_add_kcfg_files(carbon_PART_SRCS carbonstyleconfigdata.kcfgc)
-  kde4_add_plugin(carbon ${carbon_PART_SRCS})
+  kde4_add_plugin(carbon ${carbon_PART_SRCS} kstylekde4compat.cpp)
   target_link_libraries(carbon ${KDE4_KDEUI_LIBS})
   target_link_libraries(carbon carbonstyle)
 

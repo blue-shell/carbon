@@ -51,7 +51,11 @@
 #include "carbontileset.h"
 #include "config-libcarbon.h"
 
+#if OXYGEN_USE_KDE4
+#include "kstylekde4compat.h"
+#else
 #include <KStyle>
+#endif
 
 #include <QAbstractScrollArea>
 #include <QDockWidget>
@@ -88,7 +92,7 @@ namespace Carbon
 
     //* convenience typedef for base class
     #if CARBON_USE_KDE4
-    using ParentStyleClass = QCommonStyle;
+    using ParentStyleClass = KStyleKDE4Compat;
     #else
     using ParentStyleClass = KStyle;
     #endif
