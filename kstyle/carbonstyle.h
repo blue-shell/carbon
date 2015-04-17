@@ -51,7 +51,7 @@
 #include "carbontileset.h"
 #include "config-libcarbon.h"
 
-#if OXYGEN_USE_KDE4
+#if CARBON_USE_KDE4
 #include "kstylekde4compat.h"
 #else
 #include <KStyle>
