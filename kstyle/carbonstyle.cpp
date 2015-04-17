@@ -3141,8 +3141,8 @@ namespace Carbon
         const bool isInputWidget( widget && widget->testAttribute( Qt::WA_Hover ) );
         #endif
 
-        const bool mouseOver( enabled && isInputWidget && ( state & State_MouseOver ) );
-        const bool hasFocus( enabled && isInputWidget && ( state & State_HasFocus ) );
+        const bool mouseOver( enabled && isInputWidget && ( state & State_MouseOver ) && StyleConfigData::highlightFrames() );
+        const bool hasFocus( enabled && isInputWidget && ( state & State_HasFocus ) && StyleConfigData::highlightFrames() );
 
         // assume focus takes precedence over hover
         _animations->inputWidgetEngine().updateState( widget, AnimationFocus, hasFocus );
@@ -3207,8 +3207,8 @@ namespace Carbon
             // store state
             const State& state( option->state );
             const bool enabled( state & State_Enabled );
-            const bool mouseOver( enabled && ( state & State_MouseOver ) );
-            const bool hasFocus( enabled && ( state & State_HasFocus ) );
+            const bool mouseOver( enabled && ( state & State_MouseOver ) && StyleConfigData::highlightFrames());
+            const bool hasFocus( enabled && ( state & State_HasFocus ) && StyleConfigData::highlightFrames());
 
             // assume focus takes precedence over hover
             _animations->inputWidgetEngine().updateState( widget, AnimationFocus, hasFocus );

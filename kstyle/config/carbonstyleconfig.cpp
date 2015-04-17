@@ -81,6 +81,7 @@ namespace Carbon
         connect( _splitterProxyEnabled, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
         connect( _mnemonicsMode, SIGNAL(currentIndexChanged(int)), SLOT(updateChanged()) );
         connect( _animationsEnabled, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
+        connect( _highlightFrames, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
         connect( _viewDrawFocusIndicator, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
         connect( _viewTriangularExpanderSize, SIGNAL(currentIndexChanged(int)), SLOT(updateChanged()) );
         connect( _viewDrawTreeBranchLines, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
@@ -111,6 +112,7 @@ namespace Carbon
         StyleConfigData::setScrollBarSubLineButtons( _scrollBarSubLineButtons->currentIndex() );
         StyleConfigData::setMenuHighlightMode( menuMode() );
         StyleConfigData::setWindowDragMode( _windowDragMode->currentIndex()  );
+        StyleConfigData::setHighlightFrames( _highlightFrames->isChecked() );
 
         if( _expertMode )
         {
@@ -282,6 +284,7 @@ namespace Carbon
         else if( _splitterProxyEnabled->isChecked() != StyleConfigData::splitterProxyEnabled() ) modified = true;
         else if( menuMode() != StyleConfigData::menuHighlightMode() ) modified = true;
         else if( _animationsEnabled->isChecked() != StyleConfigData::animationsEnabled() ) modified = true;
+        else if( _highlightFrames->isChecked() != StyleConfigData::highlightFrames() ) modified = true;
         else if( _viewDrawFocusIndicator->isChecked() != StyleConfigData::viewDrawFocusIndicator() ) modified = true;
         else if( triangularExpanderSize() != StyleConfigData::viewTriangularExpanderSize() ) modified = true;
         else if( _animationConfigWidget && _animationConfigWidget->isChanged() ) modified = true;
@@ -315,6 +318,7 @@ namespace Carbon
         _menuHighlightSubtle->setChecked( StyleConfigData::menuHighlightMode() == StyleConfigData::MM_SUBTLE );
 
         _animationsEnabled->setChecked( StyleConfigData::animationsEnabled() );
+        _highlightFrames->setChecked(StyleConfigData::highlightFrames() );
         _windowDragMode->setCurrentIndex( StyleConfigData::windowDragMode() );
 
         _viewDrawFocusIndicator->setChecked( StyleConfigData::viewDrawFocusIndicator() );
