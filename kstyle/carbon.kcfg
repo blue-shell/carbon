@@ -78,6 +78,10 @@
       <default>false</default>
     </entry>
 
+    <entry name="ViewSelectionHasBorder" type="Bool">
+      <default>true</default>
+    </entry>
+
     <!-- scrollbars -->
     <entry name="ScrollBarWidth" type="Int">
       <default>15</default>

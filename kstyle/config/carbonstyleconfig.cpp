@@ -84,6 +84,7 @@ namespace Carbon
         connect( _viewDrawFocusIndicator, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
         connect( _viewTriangularExpanderSize, SIGNAL(currentIndexChanged(int)), SLOT(updateChanged()) );
         connect( _viewDrawTreeBranchLines, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
+        connect( _viewSelectionHasBorder, SIGNAL(toggled(bool)), SLOT(updateChanged()) );
         connect( _scrollBarWidth, SIGNAL(valueChanged(int)), SLOT(updateChanged()) );
         connect( _scrollBarAddLineButtons, SIGNAL(currentIndexChanged(int)), SLOT(updateChanged()) );
         connect( _scrollBarSubLineButtons, SIGNAL(currentIndexChanged(int)), SLOT(updateChanged()) );
@@ -104,6 +105,7 @@ namespace Carbon
         StyleConfigData::setViewDrawFocusIndicator( _viewDrawFocusIndicator->isChecked() );
         StyleConfigData::setViewTriangularExpanderSize( triangularExpanderSize() );
         StyleConfigData::setViewDrawTreeBranchLines( _viewDrawTreeBranchLines->isChecked() );
+        StyleConfigData::setViewSelectionHasBorder( _viewSelectionHasBorder->isChecked() );
         StyleConfigData::setScrollBarWidth( _scrollBarWidth->value() );
         StyleConfigData::setScrollBarAddLineButtons( _scrollBarAddLineButtons->currentIndex() );
         StyleConfigData::setScrollBarSubLineButtons( _scrollBarSubLineButtons->currentIndex() );
@@ -273,6 +275,7 @@ namespace Carbon
         if ( _toolBarDrawItemSeparator->isChecked() != StyleConfigData::toolBarDrawItemSeparator() ) modified = true;
         else if( _mnemonicsMode->currentIndex() != StyleConfigData::mnemonicsMode() ) modified = true;
         else if( _viewDrawTreeBranchLines->isChecked() != StyleConfigData::viewDrawTreeBranchLines() ) modified = true;
+        else if( _viewSelectionHasBorder->isChecked() != StyleConfigData::viewSelectionHasBorder() ) modified = true;
         else if( _scrollBarWidth->value() != StyleConfigData::scrollBarWidth() ) modified = true;
         else if( _scrollBarAddLineButtons->currentIndex() != StyleConfigData::scrollBarAddLineButtons() ) modified = true;
         else if( _scrollBarSubLineButtons->currentIndex() != StyleConfigData::scrollBarSubLineButtons() ) modified = true;
@@ -297,6 +300,7 @@ namespace Carbon
         _mnemonicsMode->setCurrentIndex( StyleConfigData::mnemonicsMode() );
         _splitterProxyEnabled->setChecked( StyleConfigData::splitterProxyEnabled() );
         _viewDrawTreeBranchLines->setChecked(StyleConfigData::viewDrawTreeBranchLines() );
+        _viewSelectionHasBorder->setChecked(StyleConfigData::viewSelectionHasBorder() );
 
         _scrollBarWidth->setValue(
             qMin(SCROLLBAR_MAXIMUM_WIDTH, qMax(SCROLLBAR_MINIMUM_WIDTH,

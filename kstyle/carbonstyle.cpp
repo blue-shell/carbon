@@ -4145,8 +4145,7 @@ namespace Carbon
             painter->drawRect( viewItemOption->rect );
             painter->setBrushOrigin( oldBrushOrigin );
 
-        } else {
-
+        } else if (StyleConfigData::viewSelectionHasBorder()) {
             // get selection tileset
             TileSet *tileSet( _helper->selection( color, rect.height(), hasCustomBackground ) );
 

@@ -47,7 +47,7 @@
       </sizepolicy>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab_1">
       <attribute name="title">
@@ -175,6 +175,13 @@
           </size>
          </property>
         </spacer>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="_viewSelectionHasBorder">
+         <property name="text">
+          <string>Draw frame around focussed items</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
