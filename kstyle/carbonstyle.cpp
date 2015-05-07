@@ -4105,7 +4105,7 @@ namespace Carbon
 
         // store flags
         const State& state( option->state );
-        const bool mouseOver( ( state & State_MouseOver ) && (!view || view->selectionMode() != QAbstractItemView::NoSelection) );
+        const bool mouseOver( ( state & State_MouseOver ) && (!view || view->selectionMode() != QAbstractItemView::NoSelection) && StyleConfigData::viewSelectionHasBorder());
         const bool selected( state & State_Selected );
         const bool enabled( state & State_Enabled );
         const bool active( state & State_Active );
@@ -4145,7 +4145,7 @@ namespace Carbon
             painter->drawRect( viewItemOption->rect );
             painter->setBrushOrigin( oldBrushOrigin );
 
-        } else if (StyleConfigData::viewSelectionHasBorder()) {
+        } else {
             // get selection tileset
             TileSet *tileSet( _helper->selection( color, rect.height(), hasCustomBackground ) );
 
